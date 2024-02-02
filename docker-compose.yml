@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: your_database_name
+      POSTGRES_USER: your_database_user
+      POSTGRES_PASSWORD: your_database_password
+    ports:
+      - "5432:5432"
+    networks:
+      - exocompanion
+  cachingDB:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - exocompanion
+
+  scraper:
+    build:
+      context: ./ExoCompanionScraper
+      dockerfile: Dockerfile
+    depends_on:
+      - database
+    networks:
+      - exocompanion
+
+  api:
+    build:
+      context: ./ExoCompanion
+      dockerfile: Dockerfile
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/your_database_name
+      SPRING_DATASOURCE_USERNAME: your_database_user
+      SPRING_DATASOURCE_PASSWORD: your_database_password
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+      - cachingDB
+    networks:
+      - exocompanion
+
+  ui:
+    image: node:latest
+    working_dir: /app
+    command: npm start
+    ports:
+      - "3000:3000"
+    networks:
+      - exocompanion
+    depends_on:
+      - api
+
+networks:
+  exocompanion:
+    driver: bridge
