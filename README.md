@@ -1,0 +1,347 @@
+# ExoCompanion
+
+
+## Features/Requirements
+
+- Aquarium Animal DB
+	- Data: 
+		- [Sweetwater Fish](https://www.flowgrow.de/db/fische)
+		- [Sweetwater Fish2](https://aquainfo.org/product-category/freshwater/fish/common-freshwater-fish-names/)
+		- [Sweetwater Invertebrates](https://www.flowgrow.de/db/wirbellose)
+		- [Saltwater Fish](https://aquainfo.org/product-category/saltwater/fish-saltwater/common-fish-saltwater/)
+		- Saltwater Invertebrates
+			- [Slugs](https://aquainfo.org/product-category/saltwater/sea-slugs)
+			- [Cuttlefish](https://aquainfo.org/product-category/saltwater/cuttlefish/)
+			- [Crustaceans](https://aquainfo.org/product-category/saltwater/crustaceans-saltwater/)
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+	- Data Model:
+		- [ ] **Aquatic** **Animal**
+			- name: ``String``
+			- engName: ``String``
+			- latName: ``String``
+			- root: ``String``
+			- subroot: ``String``
+			- class: ``String``
+			- subclass: ``String``
+			- order: ``String``
+			- subOrder: ``String``
+			- family: ``String``
+			- genus: ``String``
+			- categories: ``List<Category>``
+			- image: ``String``
+			- sizeMaleMin: ``int``
+			- sizeMaleMax: ``int``
+			- sizeFemaleMin: ``int``
+			- sizeFemaleMax: ``int``
+			- sexDifference: ``String``
+			- nanoTank: ``boolean``
+			- speciesTank: ``boolean``
+			- recommendedTankSize: ``int``
+			- tempMin: ``int``
+			- tempMax: ``int``
+			- khMin: ``int``
+			- khMax: ``int``
+			- phMin: ``int``
+			- phMax: ``int``
+			- co2Min: ``int``
+			- co2Max: ``int``
+			- ghMin: ``int``
+			- ghMax: ``int``
+			- requirements: ``List<Requirement>``
+			- foodOptions: ``List<Food>``
+			- feedingTyppes: ``List<FeedingType>``
+			- plantsRecommended: ``boolean``
+			- unfitPlants: ``List<Plant>``
+			- plantBehaviour: ``List<Behavior``
+			- breedingPossible: ``boolean``
+			- breedingType: ``String``
+		- [ ] **Category**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Coloration**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Origin**
+			- name: ``String``
+			- description: ``String``
+			- tempMin: ``int``
+			- tempMax: ``int``
+			- dayCycle: ``ìnt``
+		- [ ] **Food**
+			- name: ``String``
+			- description: ``String``
+			- image: ``String``
+			- manufacturer: ``String``
+			- amount: ``double``
+			- price: ``double``
+		- [ ] **FeedingType**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Requirement**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Behavior**
+			- name: ``String``
+			- description: ``String``
+- Terrarium Animal DB
+	- Data:
+		- Reptiles
+		- Invertebrates
+		- Amphibians
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+	- Data Model:
+		- [ ] **Land Animal**
+			- name: ``String``
+			- engName: ``String``
+			- latName: ``String``
+			- class: ``String``
+			- subclass: ``String``
+			- order: ``String``
+			- family: ``String``
+			- categories: ``List<Category>``
+			- image: ``String``
+			- sizeMaleMin: ``int``
+			- sizeMaleMax: ``int``
+			- sizeFemaleMin: ``int``
+			- sizeFemaleMax: ``int``
+			- sexDifference: ``String``
+			- speciesTank: ``boolean``
+			- recommendedTankSize: ``int``
+			- tempMin: ``int``
+			- tempMax: ``int``
+			- moistureMin: ``int``
+			- moistureMax: ``int``
+			- requirements: ``List<Requirement>``
+			- foodOptions: ``List<Food>``
+			- feedingTypes: ``List<FeedingType>``
+			- plantsRecommended: ``boolean``
+			- unfitPlants: ``List<Plant>``
+			- plantBehaviour: ``List<Behavior``
+			- breedingPossible: ``boolean``
+			- breedingType: ``String``
+    - [ ] **Substrate**:
+      - name: ``String``
+      - description: ``String``
+      - image: ``String``
+      - manufacturer: ``String``
+      - amount: ``double``
+      - price: ``double``
+- Plant DB
+	- Data:
+		- [Aquarium](https://www.flowgrow.de/db/wasserpflanzen)
+			- [Anemones](https://aquainfo.org/product-category/saltwater/anemones/)
+			- [Corals](https://reefs.com/coral/)
+		- Terrarium
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+	- Data Model:
+		- [ ] **Plant**
+			- name: ``String``
+			- engName: ``String``
+			- latName: ``String``
+			- synonyms: ``List<String>``
+			- group: ``String``
+			- order: ``String``
+			- family: ``String``
+			- genus: ``String``
+			- image: ``String``
+			- categories: ``List<Category>``
+			- plantType: ``List<PlantType>``
+			- heightMin: ``int``
+			- heightMax: ``int``
+			- widthMin: ``int``
+			- widthMax: ``int``
+			- origins: ``List<Origin>``
+			- culture: ``Culture``
+			- aquariumSuitability: ``boolean``
+			- difficulty: ``Difficulty``
+			- locations: ``List<Location>``
+			- rarity: ``Rarity``
+		- [ ] **Location**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **PlantType**
+			- name: ``String``
+			- description: ``String``
+			- image: ``String``
+		- [ ] **Rarity**:
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Difficulty**
+			- name: ``String``
+			- description: ``String``
+		- [ ] **Culture**:
+			- lightDemand: ``String``
+			- tempMin: ``double``
+			- tempMax: ``double``
+			- khMin: ``double``
+			- khMax: ``double``
+			- phMin: ``double``
+			- phMax: ``double``
+			- co2Min: ``double``
+			- co2Max: ``double``
+			- no3Min: ``double``
+			- mo3Max: ``double``
+			- po4Min: ``double``
+			- po4Max: ``double``
+			- kMin: ``double``
+			- kMax: ``double``
+			- feMin: ``double``
+			- feMax: ``double``
+			- growspeed: ``Growspeed``
+			- cultivation: ``String``
+			- canGrowEmerse: ``String``
+			- winterDurability: ``boolean``
+			- colorations: ``List<Coloration>``
+		- [ ] **Growspeed**:
+			- name: ``String``
+			- description: ``String``
+- Technical Appliance DB
+	- Data:
+		- Lights
+			- T5
+			- T8
+			- HQI
+			- HCI
+			- LED
+		- Pumps
+		- Filters
+		- O²
+		- CO²
+		- Dosing
+		- Heating
+		- Cooling
+		- Skimmers
+		- Oxidators
+		- UV-Clearers
+		- Osmosis
+		- Security
+		- Controllers
+		- Feeding Maschines
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+- Food & Supplements DB
+	- Data:
+		- Aquarium Food
+		- Terrarium Food
+		- Supplements
+		- Medication
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+- Water Chemistry DB
+	- Data:
+		- Water Supplements
+	- Requirements:
+		- Create (Admin)
+		- Read
+		- Update (Admin)
+		- Delete (Admin)
+		- List
+		- Filter
+- Calculators
+	- Aquarium Dimension Calculator
+		- Size:
+			- Quader
+			- Cube
+			- Bowed Front
+			- Bugfront
+			- Cylinder
+			- Half Cylinder
+			- Quarter Cylinder
+			- Triangular
+			- Sphere
+		- Volume + Netto Volume:
+			- Quader
+			- Cube
+			- Bowed Front
+			- Bugfront
+			- Cylinder
+			- Half Cylinder
+			- Quarter Cylinder
+			- Triangular
+			- Sphere
+	- Aquarium Water Calculator
+		- Water Amount Calculation
+		- CO² Concentration Calculation
+		- Water Blending (GK / KH) Calculation
+		- Water Blending Conductivity Calculation
+		- Temp Change Water Calculation
+		- Dilution Calculation
+	- Terrarium Dimension Calculator (Size, Volume, Netto Volume)
+		- Size:
+			- Quader
+			- Cube
+			- Bowed Front
+		- Volume + Netto Volume:
+			- Quader
+			- Cube
+			- Bowed Front 
+	- Sealant Calculator
+		- Sealant Amount Calculation
+		- Sealant Cartridge Calculation
+	- Substrate Calculator
+		- Substrate Amount Calculation
+		- Substrate Amount Sloped (Left/Right) Calculation
+		- Substrate Amount Sloped (Front/Back) Calculation
+	- Occupation Calculator
+		- Calculate Aquarium Occupation Amount
+				- Compatibility Checker:
+					- [Sweetwater](https://www.aquariumindustries.com.au/wp-content/uploads/2015/03/Freshwater-Fish-Compatibility-Chart.pdf)
+					- [Saltwater](https://www.bulkreefsupply.com/content/post/md-2016-04-species-database)
+		- Calculate Terrarium Occupation Amount
+	- Running Cost Calculator
+		- Energy Consumption Calculation (Per Day, Per Month, Per Year)
+		- Energy Cost Calculation (Per Day, Per Month, Per Year)
+		- Water Cost Calculation (Per Day, Per Month, Per Year)
+		- Food Cost Calculation (Per Day, Per Month, Per Year)
+	- Light Demand Calculator
+		- Light Demand by Tank size & Tech Calculation
+		- Light intensitivty calculation
+	- [Fertilizer Calculator](https://www.flowgrow.de/db/calculator/dose)
+- Services:
+	- Custom Aquarium/Terrarium Service
+	- Light Color Tester
+	- Unit Conversion Service
+		- Fahrenheit - Celsius
+		- Celsius - Fahrenheit
+		- Drops - ml
+		- ml - Drops
+		- gestr. Esslöffel - ml / g
+		- Gallone (US) - Liter
+		- Liter - Gallone (US)
+		- Gallone (GB) - Liter
+		- Liter - Gallone (GB)
+		- cm - inch
+		- inch - cm
+		- mm - cm
+		- cm - mm
+		- watt - kilowatt
+		- kilowatt - watt
+		- Percentage
