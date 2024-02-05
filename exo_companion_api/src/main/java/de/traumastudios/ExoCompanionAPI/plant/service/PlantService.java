@@ -64,6 +64,13 @@ public class PlantService {
             updatedElement.setHeightMax(plant.getHeightMax());
             updatedElement.setWidthMin(plant.getWidthMin());
             updatedElement.setWidthMax(plant.getWidthMax());
+            updatedElement.setCategories(plant.getCategories());
+            updatedElement.setPlantTypes(plant.getPlantTypes());
+            updatedElement.setOrigins(plant.getOrigins());
+            updatedElement.setDifficulties(plant.getDifficulties());
+            updatedElement.setLocations(plant.getLocations());
+            updatedElement.setRarities(plant.getRarities());
+            updatedElement.setCulture(plant.getCulture());
 
             return new Plant(this.plantRepository.saveAndFlush(new PlantEntity(updatedElement)));
         }

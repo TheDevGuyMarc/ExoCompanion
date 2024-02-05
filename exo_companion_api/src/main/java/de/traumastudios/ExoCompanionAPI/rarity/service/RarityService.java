@@ -47,6 +47,7 @@ public class RarityService {
             updatedElement.setId(rarity.getId());
             updatedElement.setName(rarity.getName());
             updatedElement.setDescription(rarity.getDescription());
+            updatedElement.setPlants(rarity.getPlants());
             // updatedElement.setAnimals(rarity.getAnimals());
 
             return new Rarity(this.rarityRepository.saveAndFlush(new RarityEntity(updatedElement)));

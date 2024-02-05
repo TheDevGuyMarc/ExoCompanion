@@ -47,6 +47,7 @@ public class CategoryService {
             updatedElement.setId(category.getId());
             updatedElement.setName(category.getName());
             updatedElement.setDescription(category.getDescription());
+            updatedElement.setPlants(category.getPlants());
             // updatedElement.setAnimals(category.getAnimals());
 
             return new Category(this.categoryRepository.saveAndFlush(new CategoryEntity(updatedElement)));

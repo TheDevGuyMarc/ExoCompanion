@@ -1,10 +1,17 @@
 package de.traumastudios.ExoCompanionAPI.culture.repository;
 
+import de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity;
 import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
+import de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed;
+import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity;
+import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
+import de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table
@@ -76,9 +83,24 @@ public class CultureEntity {
     @Column
     private boolean winterDurable;
 
-    // TODO: Add grow-speed relation
+    @ManyToMany
+    @JoinTable(
+        name = "culture_growspeeds",
+        joinColumns = @JoinColumn(name = "culture_id"),
+        inverseJoinColumns = @JoinColumn(name = "growspeed_id")
+    )
+    private List<GrowspeedEntity> growSpeeds;
 
-    // TODO: Add coloration relation
+    @ManyToMany
+    @JoinTable(
+        name = "culture_colorations",
+        joinColumns = @JoinColumn(name = "culture_id"),
+        inverseJoinColumns = @JoinColumn(name = "coloration_id")
+    )
+    private List<ColorationEntity> colorations;
+
+    @OneToOne(mappedBy = "culture")
+    private PlantEntity plant;
 
 
     public CultureEntity(Culture entity) {
@@ -103,5 +125,8 @@ public class CultureEntity {
         this.cultivation = entity.getCultivation();
         this.growingEmerse = entity.isGrowingEmerse();
         this.winterDurable = entity.isWinterDurable();
+        this.growSpeeds = entity.getGrowspeeds().stream().map(GrowspeedEntity::new).toList();
+        this.colorations = entity.getColorations().stream().map(ColorationEntity::new).toList();
+        this.plant = new PlantEntity(entity.getPlant());
     }
 }

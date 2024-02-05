@@ -48,6 +48,7 @@ public class LocationService {
             updatedElement.setId(location.getId());
             updatedElement.setName(location.getName());
             updatedElement.setDescription(location.getDescription());
+            updatedElement.setPlants(location.getPlants());
 
             return new Location(this.locationRepository.saveAndFlush(new LocationEntity(updatedElement)));
         }

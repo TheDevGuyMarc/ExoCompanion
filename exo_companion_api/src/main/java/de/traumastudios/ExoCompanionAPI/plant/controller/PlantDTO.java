@@ -1,7 +1,16 @@
 package de.traumastudios.ExoCompanionAPI.plant.controller;
 
+import de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO;
+import de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO;
+import de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO;
+import de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO;
+import de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO;
 import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
+import de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO;
+import de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO;
 import lombok.Getter;
+
+import java.util.List;
 
 @Getter
 public class PlantDTO {
@@ -21,14 +30,13 @@ public class PlantDTO {
     private final double heightMax;
     private final double widthMin;
     private final double widthMax;
-
-    // TODO: List<Category> relation
-    // TODO: List<PlantType> relation
-    // TODO: List<Origin> relation
-    // TODO: Difficulty relation
-    // TODO: List<Location> relation
-    // TODO: Rarity relation
-
+    private final List<CategoryDTO> categories;
+    private final List<PlantTypeDTO> plantTypes;
+    private final List<OriginDTO> origins;
+    private final List<DifficultyDTO> difficulties;
+    private final List<LocationDTO> locations;
+    private final List<RarityDTO> rarities;
+    private final CultureDTO culture;
 
     public PlantDTO(Plant entity) {
         this.id = entity.getId();
@@ -47,5 +55,12 @@ public class PlantDTO {
         this.heightMax = entity.getHeightMax();
         this.widthMin = entity.getWidthMin();
         this.widthMax = entity.getWidthMax();
+        this.categories = entity.getCategories().stream().map(CategoryDTO::new).toList();
+        this.plantTypes = entity.getPlantTypes().stream().map(PlantTypeDTO::new).toList();
+        this.origins = entity.getOrigins().stream().map(OriginDTO::new).toList();
+        this.difficulties = entity.getDifficulties().stream().map(DifficultyDTO::new).toList();
+        this.locations = entity.getLocations().stream().map(LocationDTO::new).toList();
+        this.rarities = entity.getRarities().stream().map(RarityDTO::new).toList();
+        this.culture = new CultureDTO(entity.getCulture());
     }
 }

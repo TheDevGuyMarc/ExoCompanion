@@ -1,6 +1,13 @@
 package de.traumastudios.ExoCompanionAPI.plant.repository;
 
+import de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity;
+import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
+import de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity;
+import de.traumastudios.ExoCompanionAPI.location.repository.LocationEntity;
+import de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity;
 import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
+import de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity;
+import de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -63,13 +70,57 @@ public class PlantEntity {
     @Column
     private double widthMax;
 
-    // TODO: List<Category> relation
-    // TODO: List<PlantType> relation
-    // TODO: List<Origin> relation
-    // TODO: Difficulty relation
-    // TODO: List<Location> relation
-    // TODO: Rarity relation
+    @ManyToMany
+    @JoinTable(
+        name = "plant_categories",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "category_id")
+    )
+    private List<CategoryEntity> categories;
 
+    @ManyToMany
+    @JoinTable(
+        name = "plant_planttypes",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "planttype_id")
+    )
+    private List<PlantTypeEntity> plantTypes;
+
+    @ManyToMany
+    @JoinTable(
+        name = "plant_origins",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "origin_id")
+    )
+    private List<OriginEntity> origins;
+
+    @ManyToMany
+    @JoinTable(
+        name = "plant_difficulties",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "difficulty_id")
+    )
+    private List<DifficultyEntity> difficulties;
+
+    @ManyToMany
+    @JoinTable(
+        name = "plant_locations",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "location_id")
+    )
+    private List<LocationEntity> locations;
+
+    @ManyToMany
+    @JoinTable(
+        name = "plant_rarities",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "rarity_id")
+    )
+    private List<RarityEntity> rarities;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "culture_id", referencedColumnName = "plant_id")
+    private CultureEntity culture;
 
     public PlantEntity(Plant entity) {
         this.id = entity.getId();
@@ -88,5 +139,12 @@ public class PlantEntity {
         this.heightMax = entity.getHeightMax();
         this.widthMin = entity.getWidthMin();
         this.widthMax = entity.getWidthMax();
+        this.categories = entity.getCategories().stream().map(CategoryEntity::new).toList();
+        this.plantTypes = entity.getPlantTypes().stream().map(PlantTypeEntity::new).toList();
+        this.origins = entity.getOrigins().stream().map(OriginEntity::new).toList();
+        this.difficulties = entity.getDifficulties().stream().map(DifficultyEntity::new).toList();
+        this.locations = entity.getLocations().stream().map(LocationEntity::new).toList();
+        this.rarities = entity.getRarities().stream().map(RarityEntity::new).toList();
+        this.culture = new CultureEntity(entity.getCulture());
     }
 }

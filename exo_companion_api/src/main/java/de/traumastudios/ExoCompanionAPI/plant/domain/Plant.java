@@ -1,8 +1,17 @@
 package de.traumastudios.ExoCompanionAPI.plant.domain;
 
+import de.traumastudios.ExoCompanionAPI.category.domain.Category;
+import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
+import de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty;
+import de.traumastudios.ExoCompanionAPI.location.domain.Location;
+import de.traumastudios.ExoCompanionAPI.origin.domain.Origin;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
+import de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType;
+import de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,14 +32,13 @@ public class Plant {
     private double heightMax;
     private double widthMin;
     private double widthMax;
-
-    // TODO: List<Category> relation
-    // TODO: List<PlantType> relation
-    // TODO: List<Origin> relation
-    // TODO: Difficulty relation
-    // TODO: List<Location> relation
-    // TODO: Rarity relation
-
+    private List<Category> categories;
+    private List<PlantType> plantTypes;
+    private List<Origin> origins;
+    private List<Difficulty> difficulties;
+    private List<Location> locations;
+    private List<Rarity> rarities;
+    private Culture culture;
 
     public Plant(PlantEntity entity) {
         this.id = entity.getId();
@@ -49,5 +57,12 @@ public class Plant {
         this.heightMax = entity.getHeightMax();
         this.widthMin = entity.getWidthMin();
         this.widthMax = entity.getWidthMax();
+        this.categories = entity.getCategories().stream().map(Category::new).toList();
+        this.plantTypes = entity.getPlantTypes().stream().map(PlantType::new).toList();
+        this.origins = entity.getOrigins().stream().map(Origin::new).toList();
+        this.difficulties = entity.getDifficulties().stream().map(Difficulty::new).toList();
+        this.locations = entity.getLocations().stream().map(Location::new).toList();
+        this.rarities = entity.getRarities().stream().map(Rarity::new).toList();
+        this.culture = new Culture(entity.getCulture());
     }
 }

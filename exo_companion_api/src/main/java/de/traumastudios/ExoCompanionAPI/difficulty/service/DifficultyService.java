@@ -47,6 +47,7 @@ public class DifficultyService {
             updatedElement.setId(difficulty.getId());
             updatedElement.setName(difficulty.getName());
             updatedElement.setDescription(difficulty.getDescription());
+            updatedElement.setPlants(difficulty.getPlants());
 
             return new Difficulty(this.difficultyRepository.saveAndFlush(new DifficultyEntity(updatedElement)));
         }

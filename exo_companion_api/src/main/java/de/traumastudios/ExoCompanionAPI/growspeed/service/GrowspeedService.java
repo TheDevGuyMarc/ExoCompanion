@@ -47,6 +47,7 @@ public class GrowspeedService {
             updatedElement.setId(growspeed.getId());
             updatedElement.setName(growspeed.getName());
             updatedElement.setDescription(growspeed.getDescription());
+            updatedElement.setCultures(growspeed.getCultures());
 
             return new Growspeed(this.growspeedRepository.saveAndFlush(new GrowspeedEntity(updatedElement)));
         }

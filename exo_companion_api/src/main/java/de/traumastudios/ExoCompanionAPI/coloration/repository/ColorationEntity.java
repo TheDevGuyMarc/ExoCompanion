@@ -1,6 +1,10 @@
 package de.traumastudios.ExoCompanionAPI.coloration.repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration;
+import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
+import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
+import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,6 +28,10 @@ public class ColorationEntity {
     @Column
     private String description;
 
+    @ManyToMany(mappedBy = "colorations")
+    @JsonBackReference
+    private List<CultureEntity> cultures;
+
     /*@ManyToMany(mappedBy = "colorations")
     @JsonBackReference
     private List<AquaticAnimalEntity> animals;*/
@@ -32,6 +40,7 @@ public class ColorationEntity {
         this.id = entity.getId();
         this.name = entity.getName();
         this.description = entity.getDescription();
+        this.cultures = entity.getCultures().stream().map(CultureEntity::new).toList();
         // this.animals = entity.getAnimals().stream().map(AquaticAnimalEntity::new).toList();
     }
 }

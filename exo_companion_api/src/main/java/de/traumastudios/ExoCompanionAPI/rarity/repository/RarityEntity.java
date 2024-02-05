@@ -1,10 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.rarity.repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table
@@ -22,6 +26,10 @@ public class RarityEntity {
     @Column
     private String description;
 
+    @ManyToMany(mappedBy = "rarities")
+    @JsonBackReference
+    private List<PlantEntity> plants;
+
     /*@ManyToMany(mappedBy = "rarities")
     @JsonBackReference
     private List<LandAnimalEntity> animals;*/
@@ -30,6 +38,7 @@ public class RarityEntity {
         this.id = entity.getId();
         this.name = entity.getName();
         this.description = entity.getDescription();
+        this.plants = entity.getPlants().stream().map(PlantEntity::new).toList();
         // this.animals = entity.getAnimals().stream().map(LandAnimalEntity::new).toList();
     }
 }

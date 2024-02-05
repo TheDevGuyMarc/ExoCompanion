@@ -1,10 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.category.repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import de.traumastudios.ExoCompanionAPI.category.domain.Category;
+import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table
@@ -22,6 +26,10 @@ public class CategoryEntity {
     @Column
     private String description;
 
+    @ManyToMany(mappedBy = "categories")
+    @JsonBackReference
+    private List<PlantEntity> plants;
+
     /*@ManyToMany(mappedBy = "categories")
     @JsonBackReference
     private List<AquaticAnimalEntity> animals;*/
@@ -30,6 +38,7 @@ public class CategoryEntity {
         this.id = entity.getId();
         this.name = entity.getName();
         this.description = entity.getDescription();
+        this.plants = entity.getPlants().stream().map(PlantEntity::new).toList();
         // this.animals = entity.getAnimals().stream().map(AquaticAnimalEntity::new).toList();
     }
 }

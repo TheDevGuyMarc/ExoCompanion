@@ -1,8 +1,13 @@
 package de.traumastudios.ExoCompanionAPI.culture.domain;
 
+import de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration;
 import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
+import de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed;
+import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -28,10 +33,9 @@ public class Culture {
     private String cultivation;
     private boolean growingEmerse;
     private boolean winterDurable;
-
-    // TODO: Add grow-speed relation
-
-    // TODO: Add coloration relation
+    private List<Growspeed> growspeeds;
+    private List<Coloration> colorations;
+    private Plant plant;
 
 
     public Culture(CultureEntity entity) {
@@ -56,5 +60,8 @@ public class Culture {
         this.cultivation = entity.getCultivation();
         this.growingEmerse = entity.isGrowingEmerse();
         this.winterDurable = entity.isWinterDurable();
+        this.growspeeds = entity.getGrowSpeeds().stream().map(Growspeed::new).toList();
+        this.colorations = entity.getColorations().stream().map(Coloration::new).toList();
+        this.plant = new Plant(entity.getPlant());
     }
 }

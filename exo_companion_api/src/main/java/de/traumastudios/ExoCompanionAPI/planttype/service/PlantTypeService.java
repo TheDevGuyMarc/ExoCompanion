@@ -48,6 +48,7 @@ public class PlantTypeService {
             updatedElement.setName(plantType.getName());
             updatedElement.setDescription(plantType.getDescription());
             updatedElement.setImage(plantType.getImage());
+            updatedElement.setPlants(plantType.getPlants());
 
             return new PlantType(this.plantTypeRepository.saveAndFlush(new PlantTypeEntity(updatedElement)));
         }
