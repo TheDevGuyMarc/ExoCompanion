@@ -187,7 +187,7 @@
 		- [X] **Difficulty**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Culture**:
+		- [X] **Culture**:
 			- lightDemand: ``String``
 			- tempMin: ``double``
 			- tempMax: ``double``
