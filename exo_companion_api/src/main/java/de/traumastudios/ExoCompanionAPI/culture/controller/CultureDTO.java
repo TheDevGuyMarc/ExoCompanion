@@ -5,7 +5,6 @@ import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
 import de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedDTO;
 import de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.List;
 
@@ -13,7 +12,7 @@ import java.util.List;
 public class CultureDTO {
     private final Long id;
     private final String lightDemand;
-    private double tempMin;
+    private final double tempMin;
     private final double tempMax;
     private final double khMin;
     private final double khMax;
@@ -32,7 +31,7 @@ public class CultureDTO {
     private final String cultivation;
     private final boolean growingEmerse;
     private final boolean winterDurable;
-    private final List<GrowspeedDTO> growspeeds;
+    private final List<GrowspeedDTO> growSpeeds;
     private final List<ColorationDTO> colorations;
     private final PlantDTO plant;
 
@@ -58,7 +57,7 @@ public class CultureDTO {
         this.cultivation = entity.getCultivation();
         this.growingEmerse = entity.isGrowingEmerse();
         this.winterDurable = entity.isWinterDurable();
-        this.growspeeds = entity.getGrowspeeds().stream().map(GrowspeedDTO::new).toList();
+        this.growSpeeds = entity.getGrowSpeeds().stream().map(GrowspeedDTO::new).toList();
         this.colorations = entity.getColorations().stream().map(ColorationDTO::new).toList();
         this.plant = new PlantDTO(entity.getPlant());
     }

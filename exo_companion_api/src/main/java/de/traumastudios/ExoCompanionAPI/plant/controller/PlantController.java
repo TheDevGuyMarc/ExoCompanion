@@ -2,9 +2,6 @@ package de.traumastudios.ExoCompanionAPI.plant.controller;
 
 import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
 import de.traumastudios.ExoCompanionAPI.plant.service.PlantService;
-import de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO;
-import de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType;
-import de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

@@ -2,9 +2,7 @@ package de.traumastudios.ExoCompanionAPI.coloration.repository;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration;
-import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
 import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
-import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

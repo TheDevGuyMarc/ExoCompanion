@@ -4,10 +4,6 @@ import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
 import de.traumastudios.ExoCompanionAPI.plant.exception.PlantNotFoundException;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantRepository;
-import de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType;
-import de.traumastudios.ExoCompanionAPI.planttype.exception.PlantTypeNotFoundException;
-import de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity;
-import de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -34,6 +34,6 @@ public class LocationEntity {
         this.id = entity.getId();
         this.name = entity.getName();
         this.description = entity.getDescription();
-        this.plants = entity.getPlants().stream().map().toList();
+        this.plants = entity.getPlants().stream().map(PlantEntity::new).toList();
     }
 }

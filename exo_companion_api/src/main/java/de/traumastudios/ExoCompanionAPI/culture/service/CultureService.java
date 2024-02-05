@@ -65,7 +65,7 @@ public class CultureService {
             updatedElement.setCultivation(culture.getCultivation());
             updatedElement.setGrowingEmerse(culture.isGrowingEmerse());
             updatedElement.setWinterDurable(culture.isWinterDurable());
-            updatedElement.setGrowspeeds(culture.getGrowspeeds());
+            updatedElement.setGrowSpeeds(culture.getGrowSpeeds());
             updatedElement.setColorations(culture.getColorations());
             updatedElement.setPlant(culture.getPlant());
 

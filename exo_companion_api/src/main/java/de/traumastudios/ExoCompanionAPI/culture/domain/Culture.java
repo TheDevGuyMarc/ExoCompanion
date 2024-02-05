@@ -33,7 +33,7 @@ public class Culture {
     private String cultivation;
     private boolean growingEmerse;
     private boolean winterDurable;
-    private List<Growspeed> growspeeds;
+    private List<Growspeed> growSpeeds;
     private List<Coloration> colorations;
     private Plant plant;
 
@@ -60,7 +60,7 @@ public class Culture {
         this.cultivation = entity.getCultivation();
         this.growingEmerse = entity.isGrowingEmerse();
         this.winterDurable = entity.isWinterDurable();
-        this.growspeeds = entity.getGrowSpeeds().stream().map(Growspeed::new).toList();
+        this.growSpeeds = entity.getGrowSpeeds().stream().map(Growspeed::new).toList();
         this.colorations = entity.getColorations().stream().map(Coloration::new).toList();
         this.plant = new Plant(entity.getPlant());
     }

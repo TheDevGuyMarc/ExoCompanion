@@ -2,10 +2,8 @@ package de.traumastudios.ExoCompanionAPI.culture.repository;
 
 import de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity;
 import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
-import de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed;
 import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
-import de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -125,7 +123,7 @@ public class CultureEntity {
         this.cultivation = entity.getCultivation();
         this.growingEmerse = entity.isGrowingEmerse();
         this.winterDurable = entity.isWinterDurable();
-        this.growSpeeds = entity.getGrowspeeds().stream().map(GrowspeedEntity::new).toList();
+        this.growSpeeds = entity.getGrowSpeeds().stream().map(GrowspeedEntity::new).toList();
         this.colorations = entity.getColorations().stream().map(ColorationEntity::new).toList();
         this.plant = new PlantEntity(entity.getPlant());
     }
