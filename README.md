@@ -174,17 +174,17 @@
 			- difficulty: ``Difficulty``
 			- locations: ``List<Location>``
 			- rarity: ``Rarity``
-		- [ ] **Location**
+		- [X] **Location**
 			- name: ``String``
 			- description: ``String``
 		- [ ] **PlantType**
 			- name: ``String``
 			- description: ``String``
 			- image: ``String``
-		- [ ] **Rarity**:
+		- [X] **Rarity**:
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Difficulty**
+		- [X] **Difficulty**
 			- name: ``String``
 			- description: ``String``
 		- [ ] **Culture**:
@@ -210,7 +210,7 @@
 			- canGrowEmerse: ``String``
 			- winterDurability: ``boolean``
 			- colorations: ``List<Coloration>``
-		- [ ] **Growspeed**:
+		- [X] **Growspeed**:
 			- name: ``String``
 			- description: ``String``
 - Technical Appliance DB
