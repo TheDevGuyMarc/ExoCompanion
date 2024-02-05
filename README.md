@@ -177,10 +177,10 @@
 		- [X] **Location**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **PlantType**
+		- [X] **PlantType**
 			- name: ``String``
 			- description: ``String``
-			- image: ``String``
+			- image: ``byte[]``
 		- [X] **Rarity**:
 			- name: ``String``
 			- description: ``String``
