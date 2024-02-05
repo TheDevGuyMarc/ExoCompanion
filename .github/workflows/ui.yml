@@ -1,0 +1,63 @@
+name: ExoCompanionUI CICD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies and build React app
+      run: |
+        cd exo_companion_ui
+        npm install
+        npm run build
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Analyze with SonarCloud
+      uses: sonarsource/sonarcloud-github-action@v1
+      with:
+        organization: ${{ secrets.SONAR_ORG }}
+        token: ${{ secrets.SONAR_TOKEN }}
+        projectKey: ExoCompanionUI
+        projectName: ExoCompanionUI
+        sources: 'exo_companion_ui/src'
+
+  test:
+    runs-on: ubuntu-latest
+    needs: sonarcloud
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Run React tests
+      run: |
+        cd exo_companion_ui
+        npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deploy to GitHub Releases
+      uses: softprops/action-gh-release@v1
+      with:
+        files: 'exo_companion_ui/build/*'
+        token: ${{ secrets.GITHUB_TOKEN }}

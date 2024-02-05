@@ -1,0 +1,64 @@
+name: ExoCompanionScraper CICD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'openjdk'
+        java-version: '21'
+
+    - name: Build and test Spring Boot app
+      run: |
+        cd exo_companion_scraper
+        ./mvnw clean install
+
+  sonarcloud:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Analyze with SonarCloud
+      uses: sonarsource/sonarcloud-github-action@v1
+      with:
+        organization: ${{ secrets.SONAR_ORG }}
+        token: ${{ secrets.SONAR_TOKEN }}
+        projectKey: ExoCompanionScraper
+        projectName: ExoCompanionScraper
+        sources: 'exo_companion_scraper/src'
+
+  test:
+    runs-on: ubuntu-latest
+    needs: sonarcloud
+    steps:
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'openjdk'
+        java-version: '21'
+
+    - name: Run Spring Boot tests
+      run: |
+        cd exo_companion_scraper
+        ./mvnw test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deploy to GitHub Releases
+      uses: softprops/action-gh-release@v1
+      with:
+        files: 'exo_companion_scraper/target/*'
+        token: ${{ secrets.GITHUB_TOKEN }}

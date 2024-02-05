@@ -1,1 +1,0 @@
-# ExoCompanion API
