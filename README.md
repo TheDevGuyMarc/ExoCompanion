@@ -64,9 +64,6 @@
 		- [ ] **Category**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Coloration**
-			- name: ``String``
-			- description: ``String``
 		- [ ] **Origin**
 			- name: ``String``
 			- description: ``String``
@@ -152,7 +149,7 @@
 		- List
 		- Filter
 	- Data Model:
-		- [ ] **Plant**
+		- [X] **Plant**
 			- name: ``String``
 			- engName: ``String``
 			- latName: ``String``
@@ -174,6 +171,9 @@
 			- difficulty: ``Difficulty``
 			- locations: ``List<Location>``
 			- rarity: ``Rarity``
+		- [X] **Coloration**
+		  - name: ``String``
+		  - description: ``String``
 		- [X] **Location**
 			- name: ``String``
 			- description: ``String``
