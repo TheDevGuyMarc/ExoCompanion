@@ -208,7 +208,7 @@ With ExoCompanion we test each module before release, that means we do unit and 
                <artifactId>maven-surefire-plugin</artifactId>
                <configuration>
                   <includes>
-                     <include>**/Test*.java</include>
+                     <include>**/*Test.java</include>
                   </includes>
                </configuration>
             </plugin>
@@ -224,7 +224,7 @@ With ExoCompanion we test each module before release, that means we do unit and 
                <artifactId>maven-surefire-plugin</artifactId>
                <configuration>
                   <includes>
-                     <include>**/IntegrationTest*.java</include>
+                     <include>**/*IntegrationTest.java</include>
                   </includes>
                </configuration>
             </plugin>

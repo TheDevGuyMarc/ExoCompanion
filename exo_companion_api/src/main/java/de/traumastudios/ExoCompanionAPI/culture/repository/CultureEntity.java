@@ -6,6 +6,7 @@ import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
 import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,6 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class CultureEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

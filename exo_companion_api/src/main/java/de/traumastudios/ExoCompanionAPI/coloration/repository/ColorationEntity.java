@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration;
 import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -15,6 +16,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class ColorationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
