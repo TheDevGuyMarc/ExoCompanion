@@ -16,7 +16,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "plants")
 @Getter
 @Setter
 @NoArgsConstructor

@@ -11,7 +11,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "growspeeds")
 @Getter
 @Setter
 @NoArgsConstructor
