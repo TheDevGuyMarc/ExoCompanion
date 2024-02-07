@@ -38,7 +38,7 @@ public class Plant {
     private List<Difficulty> difficulties;
     private List<Location> locations;
     private List<Rarity> rarities;
-    private Culture culture;
+    private List<Culture> cultures;
 
     public Plant(PlantEntity entity) {
         this.id = entity.getId();
@@ -63,6 +63,6 @@ public class Plant {
         this.difficulties = entity.getDifficulties().stream().map(Difficulty::new).toList();
         this.locations = entity.getLocations().stream().map(Location::new).toList();
         this.rarities = entity.getRarities().stream().map(Rarity::new).toList();
-        this.culture = new Culture(entity.getCulture());
+        this.cultures = entity.getCultures().stream().map(Culture::new).toList();
     }
 }

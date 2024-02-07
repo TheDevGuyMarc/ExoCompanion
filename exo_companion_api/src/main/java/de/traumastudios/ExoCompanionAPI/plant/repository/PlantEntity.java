@@ -118,9 +118,13 @@ public class PlantEntity {
     )
     private List<RarityEntity> rarities;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "culture_id", referencedColumnName = "plant_id")
-    private CultureEntity culture;
+    @ManyToMany
+    @JoinTable(
+        name = "plant_cultures",
+        joinColumns = @JoinColumn(name = "plant_id"),
+        inverseJoinColumns = @JoinColumn(name = "culture_id")
+    )
+    private List<CultureEntity> cultures;
 
     public PlantEntity(Plant entity) {
         this.id = entity.getId();
@@ -145,6 +149,6 @@ public class PlantEntity {
         this.difficulties = entity.getDifficulties().stream().map(DifficultyEntity::new).toList();
         this.locations = entity.getLocations().stream().map(LocationEntity::new).toList();
         this.rarities = entity.getRarities().stream().map(RarityEntity::new).toList();
-        this.culture = new CultureEntity(entity.getCulture());
+        this.cultures = entity.getCultures().stream().map(CultureEntity::new).toList();
     }
 }

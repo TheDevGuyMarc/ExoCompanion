@@ -1,5 +1,6 @@
 package de.traumastudios.ExoCompanionAPI.culture.repository;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity;
 import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
 import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity;
@@ -97,8 +98,9 @@ public class CultureEntity {
     )
     private List<ColorationEntity> colorations;
 
-    @OneToOne(mappedBy = "culture")
-    private PlantEntity plant;
+    @ManyToMany(mappedBy = "cultures")
+    @JsonBackReference
+    private List<PlantEntity> plants;
 
 
     public CultureEntity(Culture entity) {
@@ -125,6 +127,6 @@ public class CultureEntity {
         this.winterDurable = entity.isWinterDurable();
         this.growSpeeds = entity.getGrowSpeeds().stream().map(GrowspeedEntity::new).toList();
         this.colorations = entity.getColorations().stream().map(ColorationEntity::new).toList();
-        this.plant = new PlantEntity(entity.getPlant());
+        this.plants = entity.getPlants().stream().map(PlantEntity::new).toList();
     }
 }

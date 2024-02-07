@@ -33,7 +33,7 @@ public class CultureDTO {
     private final boolean winterDurable;
     private final List<GrowspeedDTO> growSpeeds;
     private final List<ColorationDTO> colorations;
-    private final PlantDTO plant;
+    private final List<PlantDTO> plants;
 
     public CultureDTO(Culture entity) {
         this.id = entity.getId();
@@ -59,6 +59,6 @@ public class CultureDTO {
         this.winterDurable = entity.isWinterDurable();
         this.growSpeeds = entity.getGrowSpeeds().stream().map(GrowspeedDTO::new).toList();
         this.colorations = entity.getColorations().stream().map(ColorationDTO::new).toList();
-        this.plant = new PlantDTO(entity.getPlant());
+        this.plants = entity.getPlants().stream().map(PlantDTO::new).toList();
     }
 }

@@ -67,7 +67,7 @@ public class CultureService {
             updatedElement.setWinterDurable(culture.isWinterDurable());
             updatedElement.setGrowSpeeds(culture.getGrowSpeeds());
             updatedElement.setColorations(culture.getColorations());
-            updatedElement.setPlant(culture.getPlant());
+            updatedElement.setPlants(culture.getPlants());
 
             return new Culture(this.cultureRepository.saveAndFlush(new CultureEntity(updatedElement)));
         }

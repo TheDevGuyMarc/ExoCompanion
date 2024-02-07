@@ -35,7 +35,7 @@ public class Culture {
     private boolean winterDurable;
     private List<Growspeed> growSpeeds;
     private List<Coloration> colorations;
-    private Plant plant;
+    private List<Plant> plants;
 
 
     public Culture(CultureEntity entity) {
@@ -62,6 +62,6 @@ public class Culture {
         this.winterDurable = entity.isWinterDurable();
         this.growSpeeds = entity.getGrowSpeeds().stream().map(Growspeed::new).toList();
         this.colorations = entity.getColorations().stream().map(Coloration::new).toList();
-        this.plant = new Plant(entity.getPlant());
+        this.plants = entity.getPlants().stream().map(Plant::new).toList();
     }
 }

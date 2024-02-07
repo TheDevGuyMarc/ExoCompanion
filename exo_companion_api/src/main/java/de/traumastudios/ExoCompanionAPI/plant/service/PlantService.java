@@ -66,7 +66,7 @@ public class PlantService {
             updatedElement.setDifficulties(plant.getDifficulties());
             updatedElement.setLocations(plant.getLocations());
             updatedElement.setRarities(plant.getRarities());
-            updatedElement.setCulture(plant.getCulture());
+            updatedElement.setCultures(plant.getCultures());
 
             return new Plant(this.plantRepository.saveAndFlush(new PlantEntity(updatedElement)));
         }

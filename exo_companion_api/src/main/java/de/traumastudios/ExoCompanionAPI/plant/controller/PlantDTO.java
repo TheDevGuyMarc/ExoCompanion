@@ -36,7 +36,7 @@ public class PlantDTO {
     private final List<DifficultyDTO> difficulties;
     private final List<LocationDTO> locations;
     private final List<RarityDTO> rarities;
-    private final CultureDTO culture;
+    private final List<CultureDTO> cultures;
 
     public PlantDTO(Plant entity) {
         this.id = entity.getId();
@@ -61,6 +61,6 @@ public class PlantDTO {
         this.difficulties = entity.getDifficulties().stream().map(DifficultyDTO::new).toList();
         this.locations = entity.getLocations().stream().map(LocationDTO::new).toList();
         this.rarities = entity.getRarities().stream().map(RarityDTO::new).toList();
-        this.culture = new CultureDTO(entity.getCulture());
+        this.cultures = entity.getCultures().stream().map(CultureDTO::new).toList();
     }
 }
