@@ -1,7 +1,39 @@
 version: '3.8'
 
 services:
+  keycloakDB:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: keycloak_database
+      POSTGRES_USER: keycloak_user
+      POSTGRES_PASSWORD: keycloak
+    ports:
+      - "5432:5432"
+    networks:
+      - exo_network
+
+  exoDB:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: exocompanion
+      POSTGRES_USER: exocompanion
+      POSTGRES_PASSWORD: exo123
+    ports:
+      - "5433:5432"
+    networks:
+      - exo_network
+
+  exoCache:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - exo_network
+
   exo_companion_scraper:
+    depends_on:
+      - exoDB
+      - exoCache
     build:
       context: ./exo_companion_scraper
       dockerfile: Dockerfile
@@ -13,17 +45,58 @@ services:
       - ./exo_companion_scraper:/app
 
   exo_companion_api:
+    depends_on:
+      - exoDB
+      - exoCache
     build:
       context: ./exo_companion_api
       dockerfile: Dockerfile
     ports:
       - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgres://exoDB:5433/exocompanion
+      SPRING_DATASOURCE_USERNAME: exocompanion
+      SPRING_DATASOURCE_PASSWORD: exo123
+      SPRING_JPA_HIBERNATE_DDL-AUTO: update
+      SERVER_PORT: 8081
     networks:
       - exo_network
     volumes:
       - ./exo_companion_api:/app
 
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "8025:8025"
+    networks:
+      - exo_network
+
+  keycloak:
+    depends_on:
+      - keycloakDB
+      - mailhog
+    restart: "unless-stopped"
+    image: bitnami/keycloak:latest
+    environment:
+      - KEYCLOAK_ADMIN_USER: admin
+      - KEYCLOAK_ADMIN_PASSWORD: admin
+      - KEYCLOAK_DATABASE_HOST: postgres
+      - KEYCLOAK_DATABASE_PORT: 5432
+      - KEYCLOAK_DATABASE_NAME: keycloak
+      - KEYCLOAK_DATABASE_USER: keycloak
+      - KEYCLOAK_DATABASE_PASSWORD: keycloak
+      - KEYCLOAK_EXTRA_ARGS: --import-realm
+    ports:
+      - "28080:8080"
+    volumes:
+      - ./infrastructure/keycloak/realms:/opt/bitnami/keycloak/data/import
+    networks:
+      - exo_network
+
   exo_companion_ui:
+    depends_on:
+      - exo_companion_api
+      - exo_companion_scraper
     build:
       context: ./exo_companion_ui
       dockerfile: Dockerfile     
@@ -33,31 +106,6 @@ services:
       - exo_network
     volumes:
       - ./exo_companion_ui:/app
-
-  postgres:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: exo_database
-      POSTGRES_USER: exo_user
-      POSTGRES_PASSWORD: exo_password
-    ports:
-      - "5432:5432"
-    networks:
-      - exo_network
-
-  redis:
-    image: redis:latest
-    ports:
-      - "6379:6379"
-    networks:
-      - exo_network
-
-  mailhog:
-    image: mailhog/mailhog:latest
-    ports:
-      - "8025:8025"
-    networks:
-      - exo_network
 
   prometheus:
     image: prom/prometheus:latest

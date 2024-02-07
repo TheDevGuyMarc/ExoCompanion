@@ -158,6 +158,27 @@ If you want to install ExoCompanion Locally you need some prerequisites to make 
   docker-compose -f docker-compose.dev.yml up
 ```
 
+#### Single Container Commands
+
+**PostgreSQL**
+```shell
+  docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+```
+
+**[Redis](https://www.docker.com/blog/how-to-use-the-redis-docker-official-image/)**
+```shell
+docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
+
+docker network create some-network
+
+​​docker run -it --network some-network --rm redis redis-cli -h some-redis
+```
+
+**[Mailhog]()**
+```shell
+docker run -d -e "MH_STORAGE=maildir" -v $PWD/maildir:/maildir -p 1025:1025 -p 8025:8025 mailhog/mailhog
+```
+
 ### Run Local UAT Environment
 ```shell
   docker-compose -f docker-compose.test.yml up
