@@ -51,7 +51,7 @@ public class PlantService {
             updatedElement.setGroup(plant.getGroup());
             updatedElement.setSynonyms(plant.getSynonyms());
             updatedElement.setSubGroup(plant.getSubGroup());
-            updatedElement.setOrder(plant.getOrder());
+            updatedElement.setPlantOrder(plant.getPlantOrder());
             updatedElement.setSubOrder(plant.getSubOrder());
             updatedElement.setFamily(plant.getFamily());
             updatedElement.setGenus(plant.getGenus());

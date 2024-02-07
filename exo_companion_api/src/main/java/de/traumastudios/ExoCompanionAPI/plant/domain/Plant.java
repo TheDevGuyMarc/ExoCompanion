@@ -23,7 +23,7 @@ public class Plant {
     private String group;
     private String synonyms;
     private String subGroup;
-    private String order;
+    private String plantOrder;
     private String subOrder;
     private String family;
     private String genus;
@@ -45,10 +45,10 @@ public class Plant {
         this.name = entity.getName();
         this.engName = entity.getEngName();
         this.latName = entity.getLatName();
-        this.group = entity.getGroup();
+        this.group = entity.getPlantGroup();
         this.synonyms = entity.getSynonyms();
         this.subGroup = entity.getSubGroup();
-        this.order = entity.getOrder();
+        this.plantOrder = entity.getPlantOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();

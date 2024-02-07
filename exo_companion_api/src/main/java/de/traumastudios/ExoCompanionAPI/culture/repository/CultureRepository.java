@@ -8,5 +8,4 @@ import java.util.Optional;
 @Repository
 public interface CultureRepository extends JpaRepository<CultureEntity, Long> {
     Optional<CultureEntity> findById(Long id);
-    Optional<CultureEntity> findByName(String name);
 }

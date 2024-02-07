@@ -29,11 +29,6 @@ public class CultureService {
                 .map(Culture::new);
     }
 
-    public Optional<Culture> findCultureByName(String name) {
-        return this.cultureRepository.findByName(name)
-                .map(Culture::new);
-    }
-
     public Culture createCulture(Culture culture) {
         return new Culture(this.cultureRepository.saveAndFlush(new CultureEntity(culture)));
     }

@@ -21,7 +21,7 @@ public class PlantDTO {
     private final String group;
     private final String synonyms;
     private final String subGroup;
-    private final String order;
+    private final String plantOrder;
     private final String subOrder;
     private final String family;
     private final String genus;
@@ -46,7 +46,7 @@ public class PlantDTO {
         this.group = entity.getGroup();
         this.synonyms = entity.getSynonyms();
         this.subGroup = entity.getSubGroup();
-        this.order = entity.getOrder();
+        this.plantOrder = entity.getPlantOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();

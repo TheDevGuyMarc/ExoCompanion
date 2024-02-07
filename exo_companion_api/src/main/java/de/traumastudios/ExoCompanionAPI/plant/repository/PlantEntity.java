@@ -35,7 +35,7 @@ public class PlantEntity {
     private String latName;
 
     @Column
-    private String group;
+    private String plantGroup;
 
     @Column
     private String synonyms;
@@ -44,7 +44,7 @@ public class PlantEntity {
     private String subGroup;
 
     @Column
-    private String order;
+    private String plantOrder;
 
     @Column
     private String subOrder;
@@ -131,10 +131,10 @@ public class PlantEntity {
         this.name = entity.getName();
         this.engName = entity.getEngName();
         this.latName = entity.getLatName();
-        this.group = entity.getGroup();
+        this.plantGroup = entity.getGroup();
         this.synonyms = entity.getSynonyms();
         this.subGroup = entity.getSubGroup();
-        this.order = entity.getOrder();
+        this.plantOrder = entity.getPlantOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();

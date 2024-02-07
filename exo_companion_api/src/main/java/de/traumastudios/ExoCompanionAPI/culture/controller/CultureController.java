@@ -37,13 +37,6 @@ public class CultureController {
                 .orElseThrow();
     }
 
-    @GetMapping("/{name}")
-    public CultureDTO readByName(@PathVariable @NotBlank String name) {
-        return this.cultureService.findCultureByName(name)
-                .map(CultureDTO::new)
-                .orElseThrow();
-    }
-
     @PostMapping
     public CultureDTO create(@RequestBody @Valid @NotNull @NotEmpty Culture culture) {
         return new CultureDTO(this.cultureService.createCulture(culture));
