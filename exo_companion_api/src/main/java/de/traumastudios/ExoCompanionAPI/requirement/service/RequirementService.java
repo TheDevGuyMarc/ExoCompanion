@@ -47,7 +47,8 @@ public class RequirementService {
             updatedElement.setId(requirement.getId());
             updatedElement.setName(requirement.getName());
             updatedElement.setDescription(requirement.getDescription());
-            updatedElement.setAnimals(requirement.getAnimals());
+            updatedElement.setLandAnimals(requirement.getLandAnimals());
+            updatedElement.setAquaticAnimals(requirement.getAquaticAnimals());
 
             return new Requirement(this.requirementRepository.saveAndFlush(new RequirementEntity(updatedElement)));
         }
