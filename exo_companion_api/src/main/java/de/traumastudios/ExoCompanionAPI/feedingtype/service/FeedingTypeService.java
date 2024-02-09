@@ -47,7 +47,8 @@ public class FeedingTypeService {
             updatedElement.setId(feedingType.getId());
             updatedElement.setName(feedingType.getName());
             updatedElement.setDescription(feedingType.getDescription());
-            updatedElement.setAnimals(feedingType.getAnimals());
+            updatedElement.setLandAnimals(feedingType.getLandAnimals());
+            updatedElement.setAquaticAnimals(feedingType.getAquaticAnimals());
 
             return new FeedingType(this.feedingTypeRepository.saveAndFlush(new FeedingTypeEntity(updatedElement)));
         }
