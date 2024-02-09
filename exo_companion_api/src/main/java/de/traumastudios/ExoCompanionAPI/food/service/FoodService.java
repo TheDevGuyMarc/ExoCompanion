@@ -51,7 +51,8 @@ public class FoodService {
             updatedElement.setManufacturer(food.getManufacturer());
             updatedElement.setAmount(food.getAmount());
             updatedElement.setPrice(food.getPrice());
-            updatedElement.setAnimals(food.getAnimals());
+            updatedElement.setLandAnimals(food.getLandAnimals());
+            updatedElement.setAquaticAnimals(food.getAquaticAnimals());
 
             return new Food(this.foodRepository.saveAndFlush(new FoodEntity(updatedElement)));
         }
