@@ -343,29 +343,29 @@ If you need any technical or functional support don't hesitate to write us an em
 			- plantBehaviour: ``List<Behavior``
 			- breedingPossible: ``boolean``
 			- breedingType: ``String``
-		- [ ] **Category**
+		- [X] **Category**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Origin**
+		- [X] **Origin**
 			- name: ``String``
 			- description: ``String``
 			- tempMin: ``int``
 			- tempMax: ``int``
 			- dayCycle: ``ìnt``
-		- [ ] **Food**
+		- [X] **Food**
 			- name: ``String``
 			- description: ``String``
 			- image: ``String``
 			- manufacturer: ``String``
 			- amount: ``double``
 			- price: ``double``
-		- [ ] **FeedingType**
+		- [X] **FeedingType**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Requirement**
+		- [X] **Requirement**
 			- name: ``String``
 			- description: ``String``
-		- [ ] **Behavior**
+		- [X] **Behavior**
 			- name: ``String``
 			- description: ``String``
 - Terrarium Animal DB
@@ -381,7 +381,7 @@ If you need any technical or functional support don't hesitate to write us an em
 		- List
 		- Filter
 	- Data Model:
-		- [ ] **Land Animal**
+		- [X] **Land Animal**
 			- name: ``String``
 			- engName: ``String``
 			- latName: ``String``
@@ -410,7 +410,7 @@ If you need any technical or functional support don't hesitate to write us an em
 			- plantBehaviour: ``List<Behavior``
 			- breedingPossible: ``boolean``
 			- breedingType: ``String``
-    - [ ] **Substrate**:
+    - [X] **Substrate**:
       - name: ``String``
       - description: ``String``
       - image: ``String``
