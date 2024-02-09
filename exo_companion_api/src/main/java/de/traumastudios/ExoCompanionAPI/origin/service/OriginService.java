@@ -52,7 +52,8 @@ public class OriginService {
             updatedElement.setHumidity(origin.getHumidity());
             updatedElement.setDayCycleHours(origin.getDayCycleHours());
             updatedElement.setPlants(origin.getPlants());
-            //updatedElement.setAnimals(origin.getAnimals());
+            updatedElement.setLandAnimals(origin.getLandAnimals());
+            updatedElement.setAquaticAnimals(origin.getAquaticAnimals());
 
             return new Origin(this.originRepository.saveAndFlush(new OriginEntity(updatedElement)));
         }

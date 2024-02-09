@@ -1,6 +1,8 @@
 package de.traumastudios.ExoCompanionAPI.origin.repository;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity;
+import de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity;
 import de.traumastudios.ExoCompanionAPI.origin.domain.Origin;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
 import jakarta.persistence.*;
@@ -44,9 +46,13 @@ public class OriginEntity {
     @JsonBackReference
     private List<PlantEntity> plants;
 
-    /*@ManyToMany(mappedBy = "origins")
+    @ManyToMany(mappedBy = "origins")
     @JsonBackReference
-    private List<AquaticAnimalEntity> animals;*/
+    private List<LandAnimalEntity> landAnimals;
+
+    @ManyToMany(mappedBy = "origins")
+    @JsonBackReference
+    private List<AquaticAnimalEntity> aquaticAnimals;
 
     public OriginEntity(Origin entity) {
         this.id = entity.getId();
@@ -57,6 +63,7 @@ public class OriginEntity {
         this.humidity = entity.getHumidity();
         this.dayCycleHours = entity.getDayCycleHours();
         this.plants = entity.getPlants().stream().map(PlantEntity::new).toList();
-        // this.animals = entity.getAnimals().stream().map(AquaticAnimalEntity::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalEntity::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimalEntity::new).toList();
     }
 }

@@ -1,5 +1,6 @@
 package de.traumastudios.ExoCompanionAPI.food.domain;
 
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal;
 import de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity;
 import de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal;
 import lombok.Getter;
@@ -17,7 +18,8 @@ public class Food {
     private String manufacturer;
     private double amount;
     private double price;
-    private List<LandAnimal> animals;
+    private List<LandAnimal> landAnimals;
+    private List<AquaticAnimal> aquaticAnimals;
 
     public Food(FoodEntity entity) {
         this.id = entity.getId();
@@ -27,6 +29,7 @@ public class Food {
         this.manufacturer = entity.getManufacturer();
         this.amount = entity.getAmount();
         this.price = entity.getPrice();
-        this.animals = entity.getAnimals().stream().map(LandAnimal::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimal::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimal::new).toList();
     }
 }
