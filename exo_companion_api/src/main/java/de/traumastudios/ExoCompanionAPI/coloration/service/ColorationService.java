@@ -48,7 +48,7 @@ public class ColorationService {
             updatedElement.setName(coloration.getName());
             updatedElement.setDescription(coloration.getDescription());
             updatedElement.setCultures(coloration.getCultures());
-            // updatedElement.setAnimals(coloration.getAnimals());
+            updatedElement.setAnimals(coloration.getAnimals());
 
             return new Coloration(this.colorationRepository.saveAndFlush(new ColorationEntity(updatedElement)));
         }
