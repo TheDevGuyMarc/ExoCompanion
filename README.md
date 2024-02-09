@@ -303,7 +303,7 @@ If you need any technical or functional support don't hesitate to write us an em
 		- List
 		- Filter
 	- Data Model:
-		- [ ] **Aquatic** **Animal**
+		- [X] **Aquatic** **Animal**
 			- name: ``String``
 			- engName: ``String``
 			- latName: ``String``
