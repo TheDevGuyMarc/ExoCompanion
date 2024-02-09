@@ -47,7 +47,8 @@ public class BehaviorService {
             updatedElement.setId(behavior.getId());
             updatedElement.setName(behavior.getName());
             updatedElement.setDescription(behavior.getDescription());
-            updatedElement.setAnimals(behavior.getAnimals());
+            updatedElement.setLandAnimals(behavior.getLandAnimals());
+            updatedElement.setAquaticAnimals(behavior.getAquaticAnimals());
 
             return new Behavior(this.behaviorRepository.saveAndFlush(new BehaviorEntity(updatedElement)));
         }

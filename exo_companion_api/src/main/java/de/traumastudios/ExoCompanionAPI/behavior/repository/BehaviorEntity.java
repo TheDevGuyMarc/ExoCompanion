@@ -1,6 +1,7 @@
 package de.traumastudios.ExoCompanionAPI.behavior.repository;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity;
 import de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior;
 import de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity;
 import jakarta.persistence.*;
@@ -28,12 +29,17 @@ public class BehaviorEntity {
 
     @ManyToMany(mappedBy = "behaviors")
     @JsonBackReference
-    private List<LandAnimalEntity> animals;
+    private List<LandAnimalEntity> landAnimals;
+
+    @ManyToMany(mappedBy = "behaviors")
+    @JsonBackReference
+    private List<AquaticAnimalEntity> aquaticAnimals;
 
     public BehaviorEntity(Behavior entity) {
         this.id = entity.getId();
         this.name = entity.getName();
         this.description = entity.getDescription();
-        this.animals = entity.getAnimals().stream().map(LandAnimalEntity::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalEntity::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimalEntity::new).toList();
     }
 }
