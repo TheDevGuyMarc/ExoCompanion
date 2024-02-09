@@ -11,7 +11,7 @@ public class SubstrateDTO {
     private final Long id;
     private final String name;
     private final String description;
-    private final String image;
+    private final byte[] image;
     private final String manufacturer;
     private final double amount;
     private final double price;

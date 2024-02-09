@@ -13,7 +13,7 @@ public class Substrate {
     private Long id;
     private String name;
     private String description;
-    private String image;
+    private byte[] image;
     private String manufacturer;
     private double amount;
     private double price;

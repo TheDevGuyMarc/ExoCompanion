@@ -29,7 +29,7 @@ public class LandAnimalDTO {
     private final String subOrder;
     private final String family;
     private final String genus;
-    private final String image;
+    private final byte[] image;
     private final List<OriginDTO> origins;
     private final List<CategoryDTO> categories;
     private final double sizeMaleMin;

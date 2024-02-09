@@ -26,8 +26,8 @@ public class SubstrateEntity {
     @Column
     private String description;
 
-    @Column
-    private String image;
+    @Lob
+    private byte[] image;
 
     @Column
     private String manufacturer;

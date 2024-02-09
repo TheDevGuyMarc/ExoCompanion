@@ -76,8 +76,8 @@ public class AquaticAnimalEntity {
     )
     private List<CategoryEntity> categories;
 
-    @Column
-    private String image;
+    @Lob
+    private byte[] image;
 
     @Column
     private double sizeMaleMin;

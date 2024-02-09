@@ -30,7 +30,7 @@ public class AquaticAnimal {
     private String subOrder;
     private String family;
     private String genus;
-    private String image;
+    private byte[] image;
     private List<Origin> origins;
     private List<Category> categories;
     private double sizeMaleMin;
