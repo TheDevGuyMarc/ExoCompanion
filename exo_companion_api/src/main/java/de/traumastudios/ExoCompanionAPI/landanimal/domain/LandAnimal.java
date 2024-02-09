@@ -27,7 +27,7 @@ public class LandAnimal {
     private String subRoot;
     private String classification;
     private String subClassification;
-    private String order;
+    private String animalOrder;
     private String subOrder;
     private String family;
     private String genus;
@@ -67,7 +67,7 @@ public class LandAnimal {
         this.subRoot = entity.getSubRoot();
         this.classification = entity.getClassification();
         this.subClassification = entity.getSubClassification();
-        this.order = entity.getOrder();
+        this.animalOrder = entity.getAnimalOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();

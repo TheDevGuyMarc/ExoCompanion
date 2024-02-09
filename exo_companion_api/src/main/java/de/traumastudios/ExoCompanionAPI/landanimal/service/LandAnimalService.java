@@ -52,7 +52,7 @@ public class LandAnimalService {
             updatedElement.setSubRoot(animal.getSubRoot());
             updatedElement.setClassification(animal.getClassification());
             updatedElement.setSubClassification(animal.getSubClassification());
-            updatedElement.setOrder(animal.getOrder());
+            updatedElement.setAnimalOrder(animal.getAnimalOrder());
             updatedElement.setSubOrder(animal.getSubOrder());
             updatedElement.setFamily(animal.getFamily());
             updatedElement.setGenus(animal.getGenus());

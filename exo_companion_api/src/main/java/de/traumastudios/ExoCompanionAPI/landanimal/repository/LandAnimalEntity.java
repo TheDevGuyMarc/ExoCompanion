@@ -19,7 +19,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "land_animals")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -50,7 +50,7 @@ public class LandAnimalEntity {
     private String subClassification;
 
     @Column
-    private String order;
+    private String animalOrder;
 
     @Column
     private String subOrder;
@@ -198,7 +198,7 @@ public class LandAnimalEntity {
         this.subRoot = entity.getSubRoot();
         this.classification = entity.getClassification();
         this.subClassification = entity.getSubClassification();
-        this.order = entity.getOrder();
+        this.animalOrder = entity.getAnimalOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();

@@ -130,7 +130,7 @@ public class PlantEntity {
     )
     private List<CultureEntity> cultures;
 
-    @ManyToMany(mappedBy = "plants")
+    @ManyToMany(mappedBy = "unfitPlants")
     @JsonBackReference
     private List<LandAnimalEntity> landAnimals;
 

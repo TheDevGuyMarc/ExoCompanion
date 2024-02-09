@@ -25,7 +25,7 @@ public class LandAnimalDTO {
     private final String subRoot;
     private final String classification;
     private final String subClassification;
-    private final String order;
+    private final String animalOrder;
     private final String subOrder;
     private final String family;
     private final String genus;
@@ -65,7 +65,7 @@ public class LandAnimalDTO {
         this.subRoot = entity.getSubRoot();
         this.classification = entity.getClassification();
         this.subClassification = entity.getSubClassification();
-        this.order = entity.getOrder();
+        this.animalOrder = entity.getAnimalOrder();
         this.subOrder = entity.getSubOrder();
         this.family = entity.getFamily();
         this.genus = entity.getGenus();
