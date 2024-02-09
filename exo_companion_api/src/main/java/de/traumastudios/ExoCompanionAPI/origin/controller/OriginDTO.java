@@ -1,5 +1,7 @@
 package de.traumastudios.ExoCompanionAPI.origin.controller;
 
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO;
+import de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO;
 import de.traumastudios.ExoCompanionAPI.origin.domain.Origin;
 import de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO;
 import lombok.Getter;
@@ -16,7 +18,8 @@ public class OriginDTO {
     private final double humidity;
     private final int dayCycleHours;
     private final List<PlantDTO> plants;
-    // private final List<AquaticAnimalDTO> animals;
+    private final List<LandAnimalDTO> landAnimals;
+    private final List<AquaticAnimalDTO> aquaticAnimals;
 
     public OriginDTO(Origin entity) {
         this.id = entity.getId();
@@ -27,6 +30,7 @@ public class OriginDTO {
         this.humidity = entity.getHumidity();
         this.dayCycleHours = entity.getDayCycleHours();
         this.plants = entity.getPlants().stream().map(PlantDTO::new).toList();
-        // this.animals = entity.getAnimals().stream().map(AquaticAnimalDTO::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalDTO::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimalDTO::new).toList();
     }
 }
