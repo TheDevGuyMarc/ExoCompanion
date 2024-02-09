@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-@EnableWebSecurity
+/*@EnableWebSecurity
 @Configuration
 @EnableMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig {
@@ -36,4 +36,4 @@ public class WebSecurityConfig {
     public JwtDecoder jwtDecoder() {
         return NimbusJwtDecoder.withJwkSetUri("").build(); // TODO: Set JWK with Keycloak
     }
-}
+}*/

@@ -3,6 +3,7 @@ package de.traumastudios.ExoCompanionAPI.plant.controller;
 import de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO;
 import de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO;
 import de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO;
+import de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO;
 import de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO;
 import de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO;
 import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
@@ -37,6 +38,7 @@ public class PlantDTO {
     private final List<LocationDTO> locations;
     private final List<RarityDTO> rarities;
     private final List<CultureDTO> cultures;
+    private final List<LandAnimalDTO> landAnimals;
 
     public PlantDTO(Plant entity) {
         this.id = entity.getId();
@@ -62,5 +64,6 @@ public class PlantDTO {
         this.locations = entity.getLocations().stream().map(LocationDTO::new).toList();
         this.rarities = entity.getRarities().stream().map(RarityDTO::new).toList();
         this.cultures = entity.getCultures().stream().map(CultureDTO::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalDTO::new).toList();
     }
 }

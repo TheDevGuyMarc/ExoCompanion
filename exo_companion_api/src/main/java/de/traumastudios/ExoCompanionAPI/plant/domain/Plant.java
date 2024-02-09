@@ -3,6 +3,7 @@ package de.traumastudios.ExoCompanionAPI.plant.domain;
 import de.traumastudios.ExoCompanionAPI.category.domain.Category;
 import de.traumastudios.ExoCompanionAPI.culture.domain.Culture;
 import de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty;
+import de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal;
 import de.traumastudios.ExoCompanionAPI.location.domain.Location;
 import de.traumastudios.ExoCompanionAPI.origin.domain.Origin;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
@@ -39,6 +40,7 @@ public class Plant {
     private List<Location> locations;
     private List<Rarity> rarities;
     private List<Culture> cultures;
+    private List<LandAnimal> landAnimals;
 
     public Plant(PlantEntity entity) {
         this.id = entity.getId();
@@ -64,5 +66,6 @@ public class Plant {
         this.locations = entity.getLocations().stream().map(Location::new).toList();
         this.rarities = entity.getRarities().stream().map(Rarity::new).toList();
         this.cultures = entity.getCultures().stream().map(Culture::new).toList();
+        this.landAnimals = entity.getLandAnimals().stream().map(LandAnimal::new).toList();
     }
 }
