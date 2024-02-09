@@ -8,6 +8,7 @@ import de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO;
 import de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO;
 import de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO;
 import de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO;
+import de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO;
 import de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO;
 import lombok.Getter;
 
@@ -58,6 +59,7 @@ public class AquaticAnimalDTO {
     private final String breedingDifficulty;
     private final String breedingTips;
     private final List<ColorationDTO> colorations;
+    private final List<RarityDTO> rarities;
 
     public AquaticAnimalDTO(AquaticAnimal entity) {
         this.id = entity.getId();
@@ -103,5 +105,6 @@ public class AquaticAnimalDTO {
         this.breedingDifficulty = entity.getBreedingDifficulty();
         this.breedingTips = entity.getBreedingTips();
         this.colorations = entity.getColorations().stream().map(ColorationDTO::new).toList();
+        this.rarities = entity.getRarities().stream().map(RarityDTO::new).toList();
     }
 }

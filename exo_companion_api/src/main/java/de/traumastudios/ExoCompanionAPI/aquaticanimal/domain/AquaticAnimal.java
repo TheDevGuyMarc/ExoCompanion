@@ -8,6 +8,7 @@ import de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType;
 import de.traumastudios.ExoCompanionAPI.food.domain.Food;
 import de.traumastudios.ExoCompanionAPI.origin.domain.Origin;
 import de.traumastudios.ExoCompanionAPI.plant.domain.Plant;
+import de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity;
 import de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement;
 import lombok.Getter;
 import lombok.Setter;
@@ -60,6 +61,7 @@ public class AquaticAnimal {
     private String breedingDifficulty;
     private String breedingTips;
     private List<Coloration> colorations;
+    private List<Rarity> rarities;
 
     public AquaticAnimal(AquaticAnimalEntity entity) {
         this.id = entity.getId();
@@ -105,5 +107,6 @@ public class AquaticAnimal {
         this.breedingDifficulty = entity.getBreedingDifficulty();
         this.breedingTips = entity.getBreedingTips();
         this.colorations = entity.getColorations().stream().map(Coloration::new).toList();
+        this.rarities = entity.getRarities().stream().map(Rarity::new).toList();
     }
 }

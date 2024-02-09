@@ -8,6 +8,7 @@ import de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity
 import de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity;
 import de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity;
 import de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity;
+import de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity;
 import de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,7 +18,7 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table(name = "aquatic_animal")
+@Table(name = "aquatic_animals")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -192,6 +193,14 @@ public class AquaticAnimalEntity {
     )
     private List<ColorationEntity> colorations;
 
+    @ManyToMany
+    @JoinTable(
+        name = "aquaticanimal_rarities",
+        joinColumns = @JoinColumn(name = "aquaticanimal_id"),
+        inverseJoinColumns = @JoinColumn(name = "rarity_id")
+    )
+    private List<RarityEntity> rarities;
+
     public AquaticAnimalEntity(AquaticAnimal entity) {
         this.id = entity.getId();
         this.name = entity.getName();
@@ -236,5 +245,6 @@ public class AquaticAnimalEntity {
         this.breedingDifficulty = entity.getBreedingDifficulty();
         this.breedingTips = entity.getBreedingTips();
         this.colorations = entity.getColorations().stream().map(ColorationEntity::new).toList();
+        this.rarities = entity.getRarities().stream().map(RarityEntity::new).toList();
     }
 }

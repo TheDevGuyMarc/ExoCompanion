@@ -87,6 +87,7 @@ public class AquaticAnimalService {
             updatedElement.setBreedingDifficulty(animal.getBreedingDifficulty());
             updatedElement.setBreedingTips(animal.getBreedingTips());
             updatedElement.setColorations(animal.getColorations());
+            updatedElement.setRarities(animal.getRarities());
 
             return new AquaticAnimal(this.aquaticAnimalRepository.saveAndFlush(new AquaticAnimalEntity(updatedElement)));
         }
