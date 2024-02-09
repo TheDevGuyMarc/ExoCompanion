@@ -1,6 +1,7 @@
 package de.traumastudios.ExoCompanionAPI.plant.repository;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity;
 import de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity;
 import de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity;
 import de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity;
@@ -134,6 +135,10 @@ public class PlantEntity {
     @JsonBackReference
     private List<LandAnimalEntity> landAnimals;
 
+    @ManyToMany(mappedBy = "unfitPlants")
+    @JsonBackReference
+    private List<AquaticAnimalEntity> aquaticAnimals;
+
     public PlantEntity(Plant entity) {
         this.id = entity.getId();
         this.name = entity.getName();
@@ -159,5 +164,6 @@ public class PlantEntity {
         this.rarities = entity.getRarities().stream().map(RarityEntity::new).toList();
         this.cultures = entity.getCultures().stream().map(CultureEntity::new).toList();
         this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalEntity::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimalEntity::new).toList();
     }
 }

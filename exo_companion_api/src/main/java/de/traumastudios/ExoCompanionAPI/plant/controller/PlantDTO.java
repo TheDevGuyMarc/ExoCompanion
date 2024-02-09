@@ -1,5 +1,6 @@
 package de.traumastudios.ExoCompanionAPI.plant.controller;
 
+import de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO;
 import de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO;
 import de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO;
 import de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO;
@@ -39,6 +40,7 @@ public class PlantDTO {
     private final List<RarityDTO> rarities;
     private final List<CultureDTO> cultures;
     private final List<LandAnimalDTO> landAnimals;
+    private final List<AquaticAnimalDTO> aquaticAnimals;
 
     public PlantDTO(Plant entity) {
         this.id = entity.getId();
@@ -65,5 +67,6 @@ public class PlantDTO {
         this.rarities = entity.getRarities().stream().map(RarityDTO::new).toList();
         this.cultures = entity.getCultures().stream().map(CultureDTO::new).toList();
         this.landAnimals = entity.getLandAnimals().stream().map(LandAnimalDTO::new).toList();
+        this.aquaticAnimals = entity.getAquaticAnimals().stream().map(AquaticAnimalDTO::new).toList();
     }
 }
