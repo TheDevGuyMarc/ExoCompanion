@@ -1,0 +1,2507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/frosttrauma/Documents/ExoCompanion/exo_companion_api/src/main/java/de/traumastudios/ExoCompanionAPI</OriginalElement>
+  <nodes>
+    <node x="1273.0" y="1206.0">de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeRepository</node>
+    <node x="947.5" y="2306.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalRepository</node>
+    <node x="2109.0" y="3006.0">de.traumastudios.ExoCompanionAPI.category.controller.CategoryController</node>
+    <node x="2081.0" y="2026.0">de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO</node>
+    <node x="720.0" y="1206.0">de.traumastudios.ExoCompanionAPI.rarity.repository.RarityRepository</node>
+    <node x="4085.0" y="2526.0">de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity</node>
+    <node x="807.5" y="326.0">de.traumastudios.ExoCompanionAPI.planttype.exception.PlantTypeNotFoundException</node>
+    <node x="900.0" y="2526.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService</node>
+    <node x="244.5" y="266.0">de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType</node>
+    <node x="386.0" y="2026.0">de.traumastudios.ExoCompanionAPI.substrate.domain.Substrate</node>
+    <node x="2598.0" y="2026.0">de.traumastudios.ExoCompanionAPI.requirement.exception.RequirementNotFoundException</node>
+    <node x="471.0" y="2306.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.exception.AquaticAnimalNotFoundException</node>
+    <node x="3995.5" y="1666.0">de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity</node>
+    <node x="3011.5" y="266.0">de.traumastudios.ExoCompanionAPI.difficulty.exception.DifficultyNotFoundException</node>
+    <node x="4017.5" y="1206.0">de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity</node>
+    <node x="2529.0" y="1666.0">de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateDTO</node>
+    <node x="3120.5" y="826.0">de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService</node>
+    <node x="2307.0" y="2306.0">de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService</node>
+    <node x="2763.0" y="1146.0">de.traumastudios.ExoCompanionAPI.origin.exception.OriginNotFoundException</node>
+    <node x="3207.5" y="326.0">de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyRepository</node>
+    <node x="2659.5" y="1206.0">de.traumastudios.ExoCompanionAPI.origin.repository.OriginRepository</node>
+    <node x="1960.5" y="826.0">de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedController</node>
+    <node x="-32.0" y="1666.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal</node>
+    <node x="1746.5" y="766.0">de.traumastudios.ExoCompanionAPI.plant.exception.PlantNotFoundException</node>
+    <node x="3723.5" y="1206.0">de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateEntity</node>
+    <node x="2234.5" y="1966.0">de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementRepository</node>
+    <node x="608.5" y="326.0">de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty</node>
+    <node x="3833.0" y="326.0">de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity</node>
+    <node x="3640.0" y="-14.0">de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity</node>
+    <node x="3638.5" y="266.0">de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity</node>
+    <node x="3462.0" y="326.0">de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity</node>
+    <node x="4212.5" y="1206.0">de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity</node>
+    <node x="1478.5" y="326.0">de.traumastudios.ExoCompanionAPI.culture.exception.CultureNotFoundException</node>
+    <node x="1761.0" y="1606.0">de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService</node>
+    <node x="1407.5" y="826.0">de.traumastudios.ExoCompanionAPI.culture.service.CultureService</node>
+    <node x="-157.0" y="1206.0">de.traumastudios.ExoCompanionAPI.food.domain.Food</node>
+    <node x="1416.0" y="1146.0">de.traumastudios.ExoCompanionAPI.feedingtype.exception.FeedingTypeNotFoundException</node>
+    <node x="2622.0" y="46.0">de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationRepository</node>
+    <node x="2358.5" y="766.0">de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO</node>
+    <node x="1671.0" y="266.0">de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService</node>
+    <node x="1274.5" y="2026.0">de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeController</node>
+    <node x="2175.5" y="1206.0">de.traumastudios.ExoCompanionAPI.plant.service.PlantService</node>
+    <node x="684.0" y="266.0">de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeRepository</node>
+    <node x="2674.5" y="326.0">de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService</node>
+    <node x="1482.0" y="46.0">de.traumastudios.ExoCompanionAPI.growspeed.exception.GrowspeedNotFoundException</node>
+    <node x="140.0" y="326.0">de.traumastudios.ExoCompanionAPI.origin.domain.Origin</node>
+    <node x="3986.0" y="266.0">de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity</node>
+    <node x="826.0" y="1146.0">de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeController</node>
+    <node x="776.5" y="826.0">de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService</node>
+    <node x="3521.0" y="2246.0">de.traumastudios.ExoCompanionAPI.landanimal.exception.LandAnimalNotFoundException</node>
+    <node x="349.0" y="1206.0">de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior</node>
+    <node x="2745.5" y="-14.0">de.traumastudios.ExoCompanionAPI.coloration.exception.ColorationNotFoundException</node>
+    <node x="3981.0" y="826.0">de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity</node>
+    <node x="2751.5" y="826.0">de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO</node>
+    <node x="1466.0" y="1966.0">de.traumastudios.ExoCompanionAPI.food.exception.FoodNotFoundException</node>
+    <node x="1612.0" y="1206.0">de.traumastudios.ExoCompanionAPI.behavior.exception.BehaviorNotFoundException</node>
+    <node x="2446.5" y="1206.0">de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO</node>
+    <node x="4252.5" y="266.0">de.traumastudios.ExoCompanionAPI.location.exception.LocationNotFoundException</node>
+    <node x="4449.0" y="326.0">de.traumastudios.ExoCompanionAPI.location.repository.LocationRepository</node>
+    <node x="1366.0" y="1606.0">de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO</node>
+    <node x="153.0" y="1146.0">de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType</node>
+    <node x="3081.5" y="2026.0">de.traumastudios.ExoCompanionAPI.origin.controller.OriginController</node>
+    <node x="944.0" y="1206.0">de.traumastudios.ExoCompanionAPI.rarity.exception.RarityNotFoundException</node>
+    <node x="1912.0" y="1666.0">de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO</node>
+    <node x="1746.5" y="2526.0">de.traumastudios.ExoCompanionAPI.category.repository.CategoryRepository</node>
+    <node x="1616.0" y="1666.0">de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO</node>
+    <node x="3539.5" y="2766.0">de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalController</node>
+    <node x="3192.0" y="1666.0">de.traumastudios.ExoCompanionAPI.origin.service.OriginService</node>
+    <node x="3456.5" y="46.0">de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity</node>
+    <node x="1604.5" y="2586.0">de.traumastudios.ExoCompanionAPI.food.controller.FoodController</node>
+    <node x="61.0" y="1206.0">de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity</node>
+    <node x="3290.5" y="1206.0">de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity</node>
+    <node x="1698.5" y="-14.0">de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedRepository</node>
+    <node x="682.5" y="2026.0">de.traumastudios.ExoCompanionAPI.food.repository.FoodRepository</node>
+    <node x="4147.0" y="326.0">de.traumastudios.ExoCompanionAPI.location.repository.LocationEntity</node>
+    <node x="2125.5" y="326.0">de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO</node>
+    <node x="3509.0" y="1966.0">de.traumastudios.ExoCompanionAPI.substrate.exception.SubstrateNotFoundException</node>
+    <node x="1755.0" y="2306.0">de.traumastudios.ExoCompanionAPI.food.service.FoodService</node>
+    <node x="2903.0" y="1666.0">de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO</node>
+    <node x="1931.0" y="2586.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO</node>
+    <node x="42.5" y="46.0">de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration</node>
+    <node x="2288.0" y="2946.0">de.traumastudios.ExoCompanionAPI.ExoCompanionApiApplication</node>
+    <node x="2302.0" y="266.0">de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedDTO</node>
+    <node x="2236.5" y="2586.0">de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementController</node>
+    <node x="1817.0" y="1146.0">de.traumastudios.ExoCompanionAPI.culture.controller.CultureController</node>
+    <node x="2165.0" y="1666.0">de.traumastudios.ExoCompanionAPI.plant.controller.PlantController</node>
+    <node x="2507.5" y="826.0">de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO</node>
+    <node x="2912.5" y="766.0">de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO</node>
+    <node x="953.0" y="1666.0">de.traumastudios.ExoCompanionAPI.rarity.service.RarityService</node>
+    <node x="3287.5" y="2586.0">de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateController</node>
+    <node x="1354.5" y="266.0">de.traumastudios.ExoCompanionAPI.culture.repository.CultureRepository</node>
+    <node x="1958.0" y="2306.0">de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO</node>
+    <node x="3050.0" y="1206.0">de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyController</node>
+    <node x="383.5" y="826.0">de.traumastudios.ExoCompanionAPI.plant.domain.Plant</node>
+    <node x="1749.5" y="2826.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalController</node>
+    <node x="4185.5" y="2306.0">de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity</node>
+    <node x="379.0" y="-14.0">de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed</node>
+    <node x="1165.0" y="1666.0">de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService</node>
+    <node x="1643.0" y="826.0">de.traumastudios.ExoCompanionAPI.plant.repository.PlantRepository</node>
+    <node x="1790.5" y="2026.0">de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorController</node>
+    <node x="3358.0" y="2306.0">de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService</node>
+    <node x="-42.0" y="2306.0">de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal</node>
+    <node x="962.5" y="2026.0">de.traumastudios.ExoCompanionAPI.rarity.controller.RarityController</node>
+    <node x="-45.0" y="2026.0">de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement</node>
+    <node x="4331.0" y="1146.0">de.traumastudios.ExoCompanionAPI.location.controller.LocationController</node>
+    <node x="3610.0" y="2586.0">de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService</node>
+    <node x="4120.5" y="2026.0">de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity</node>
+    <node x="3385.5" y="2026.0">de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateRepository</node>
+    <node x="1929.0" y="1206.0">de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorRepository</node>
+    <node x="4381.5" y="826.0">de.traumastudios.ExoCompanionAPI.location.service.LocationService</node>
+    <node x="2604.0" y="766.0">de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationController</node>
+    <node x="2224.0" y="826.0">de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO</node>
+    <node x="2090.5" y="2766.0">de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO</node>
+    <node x="3486.5" y="1146.0">de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity</node>
+    <node x="489.5" y="266.0">de.traumastudios.ExoCompanionAPI.location.domain.Location</node>
+    <node x="3878.0" y="2306.0">de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalRepository</node>
+    <node x="4190.5" y="2586.0">de.traumastudios.ExoCompanionAPI.category.exception.CategoryNotFoundException</node>
+    <node x="2219.5" y="2826.0">de.traumastudios.ExoCompanionAPI.category.service.CategoryService</node>
+    <node x="375.5" y="326.0">de.traumastudios.ExoCompanionAPI.culture.domain.Culture</node>
+    <node x="-132.5" y="2586.0">de.traumastudios.ExoCompanionAPI.category.domain.Category</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.service.RarityService" target="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityRepository" relationship="TO_ONE">
+      <point x="-37.5" y="-14.0" />
+      <point x="990.5" y="1580.0" />
+      <point x="808.0" y="1580.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="41.33333333333333" y="14.0" />
+      <point x="1469.3333333333333" y="1660.0" />
+      <point x="1468.0" y="1660.0" />
+      <point x="1468.0" y="1840.0" />
+      <point x="2428.0" y="1840.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1900.0" />
+      <point x="1428.0" y="1900.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.location.repository.LocationEntity" relationship="TO_MANY">
+      <point x="33.5" y="-14.0" />
+      <point x="4081.5" y="800.0" />
+      <point x="4088.0" y="800.0" />
+      <point x="4088.0" y="420.0" />
+      <point x="4228.0" y="420.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="408.0" y="1460.0" />
+      <point x="88.0" y="1460.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO" relationship="TO_MANY">
+      <point x="-58.0" y="14.0" />
+      <point x="2110.0" y="2080.0" />
+      <point x="2108.0" y="2080.0" />
+      <point x="2108.0" y="2260.0" />
+      <point x="2003.0" y="2260.0" />
+      <point x="-45.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1420.0" />
+      <point x="-192.0" y="1420.0" />
+      <point x="-192.0" y="1280.0" />
+      <point x="368.66666666666663" y="1280.0" />
+      <point x="-39.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="45.0" y="-14.0" />
+      <point x="2093.0" y="2280.0" />
+      <point x="2168.0" y="2280.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.repository.LocationEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="-54.0" y="14.0" />
+      <point x="4174.0" y="460.0" />
+      <point x="3968.0" y="460.0" />
+      <point x="3968.0" y="800.0" />
+      <point x="4014.5" y="800.0" />
+      <point x="-33.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.service.OriginService" target="de.traumastudios.ExoCompanionAPI.origin.exception.OriginNotFoundException" relationship="CREATE">
+      <point x="38.0" y="-14.0" />
+      <point x="3306.0" y="1640.0" />
+      <point x="3288.0" y="1640.0" />
+      <point x="3288.0" y="1300.0" />
+      <point x="2888.0" y="1300.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalRepository" relationship="TO_ONE">
+      <point x="49.0" y="-14.0" />
+      <point x="3757.0" y="2560.0" />
+      <point x="3988.0" y="2560.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService" target="de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty" relationship="CREATE">
+      <point x="-43.75" y="-14.0" />
+      <point x="3164.25" y="800.0" />
+      <point x="3168.0" y="800.0" />
+      <point x="3168.0" y="400.0" />
+      <point x="707.666666666667" y="400.0" />
+      <point x="39.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalController" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="CREATE">
+      <point x="59.25" y="-14.0" />
+      <point x="1927.25" y="2740.0" />
+      <point x="2092.6666666666665" y="2740.0" />
+      <point x="64.66666666666666" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantController" target="de.traumastudios.ExoCompanionAPI.plant.service.PlantService" relationship="TO_ONE">
+      <point x="-41.5" y="-14.0" />
+      <point x="2206.5" y="1640.0" />
+      <point x="2248.0" y="1640.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="50.66666666666667" y="14.0" />
+      <point x="2038.6666666666665" y="1720.0" />
+      <point x="2048.0" y="1720.0" />
+      <point x="2048.0" y="2220.0" />
+      <point x="1928.0" y="2220.0" />
+      <point x="1928.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="1728.0" y="2360.0" />
+      <point x="1728.0" y="2200.0" />
+      <point x="2008.0" y="2200.0" />
+      <point x="2008.0" y="1720.0" />
+      <point x="1988.0" y="1720.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.service.FoodService" target="de.traumastudios.ExoCompanionAPI.food.exception.FoodNotFoundException" relationship="CREATE">
+      <point x="36.5" y="-14.0" />
+      <point x="1864.5" y="2280.0" />
+      <point x="1868.0" y="2280.0" />
+      <point x="1868.0" y="2140.0" />
+      <point x="1588.0" y="2140.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateController" target="de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService" relationship="TO_ONE">
+      <point x="50.25" y="-14.0" />
+      <point x="3438.25" y="2560.0" />
+      <point x="3448.0" y="2560.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" target="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="108.0" y="140.0" />
+      <point x="448.0" y="140.0" />
+      <point x="448.0" y="300.0" />
+      <point x="454.25" y="300.0" />
+      <point x="26.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" target="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" relationship="TO_MANY">
+      <point x="-26.25" y="-14.0" />
+      <point x="401.75" y="300.0" />
+      <point x="408.0" y="300.0" />
+      <point x="408.0" y="240.0" />
+      <point x="-252.0" y="240.0" />
+      <point x="-252.0" y="100.0" />
+      <point x="64.33333333333331" y="100.0" />
+      <point x="-43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService" target="de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateRepository" relationship="TO_ONE">
+      <point x="-45.0" y="-14.0" />
+      <point x="3403.0" y="2160.0" />
+      <point x="3488.0" y="2160.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.location.domain.Location" relationship="TO_MANY">
+      <point x="-22.25" y="-14.0" />
+      <point x="405.75" y="800.0" />
+      <point x="408.0" y="800.0" />
+      <point x="408.0" y="520.0" />
+      <point x="509.0" y="520.0" />
+      <point x="-39.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.domain.Location" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="548.0" y="560.0" />
+      <point x="588.0" y="560.0" />
+      <point x="588.0" y="800.0" />
+      <point x="450.25" y="800.0" />
+      <point x="22.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" target="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2208.0" y="700.0" />
+      <point x="2388.0" y="700.0" />
+      <point x="2388.0" y="740.0" />
+      <point x="2393.25" y="740.0" />
+      <point x="-34.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" target="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" relationship="TO_MANY">
+      <point x="34.75" y="-14.0" />
+      <point x="2462.75" y="740.0" />
+      <point x="2448.0" y="740.0" />
+      <point x="2448.0" y="660.0" />
+      <point x="1688.0" y="660.0" />
+      <point x="1688.0" y="380.0" />
+      <point x="2153.0" y="380.0" />
+      <point x="-55.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="228.0" y="1440.0" />
+      <point x="88.0" y="1440.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1400.0" />
+      <point x="188.0" y="1400.0" />
+      <point x="188.0" y="1200.0" />
+      <point x="178.0" y="1200.0" />
+      <point x="-50.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2508.0" y="1640.0" />
+      <point x="2935.5" y="1640.0" />
+      <point x="-32.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2508.0" y="1840.0" />
+      <point x="2488.0" y="1840.0" />
+      <point x="2488.0" y="2280.0" />
+      <point x="2528.0" y="2280.0" />
+      <point x="2528.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="3008.0" y="2360.0" />
+      <point x="3008.0" y="1980.0" />
+      <point x="3048.0" y="1980.0" />
+      <point x="3048.0" y="1620.0" />
+      <point x="3008.0" y="1620.0" />
+      <point x="3008.0" y="1260.0" />
+      <point x="2549.0" y="1260.0" />
+      <point x="41.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="32.5" y="-14.0" />
+      <point x="3000.5" y="1620.0" />
+      <point x="3008.0" y="1620.0" />
+      <point x="3008.0" y="1260.0" />
+      <point x="2549.0" y="1260.0" />
+      <point x="41.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO" relationship="TO_MANY">
+      <point x="-30.75" y="-14.0" />
+      <point x="2477.25" y="1180.0" />
+      <point x="2508.0" y="1180.0" />
+      <point x="2508.0" y="920.0" />
+      <point x="2937.6666666666665" y="920.0" />
+      <point x="-50.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2988.0" y="900.0" />
+      <point x="2708.0" y="900.0" />
+      <point x="2708.0" y="1180.0" />
+      <point x="2538.75" y="1180.0" />
+      <point x="30.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4048.0" y="1100.0" />
+      <point x="4748.0" y="1100.0" />
+      <point x="4748.0" y="2420.0" />
+      <point x="4208.0" y="2420.0" />
+      <point x="4208.0" y="2500.0" />
+      <point x="4209.5" y="2500.0" />
+      <point x="41.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="-41.5" y="-14.0" />
+      <point x="4126.5" y="2500.0" />
+      <point x="4128.0" y="2500.0" />
+      <point x="4128.0" y="2440.0" />
+      <point x="4788.0" y="2440.0" />
+      <point x="4788.0" y="1120.0" />
+      <point x="4128.0" y="1120.0" />
+      <point x="4128.0" y="880.0" />
+      <point x="4092.666666666667" y="880.0" />
+      <point x="44.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="38.75" y="-14.0" />
+      <point x="2206.75" y="2740.0" />
+      <point x="2208.0" y="2740.0" />
+      <point x="2208.0" y="2280.0" />
+      <point x="2168.0" y="2280.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService" target="de.traumastudios.ExoCompanionAPI.coloration.exception.ColorationNotFoundException" relationship="CREATE">
+      <point x="46.75" y="-14.0" />
+      <point x="2814.75" y="300.0" />
+      <point x="2808.0" y="300.0" />
+      <point x="2808.0" y="120.0" />
+      <point x="2888.0" y="120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" relationship="TO_MANY">
+      <point x="-58.0" y="14.0" />
+      <point x="2110.0" y="2080.0" />
+      <point x="2108.0" y="2080.0" />
+      <point x="2108.0" y="2260.0" />
+      <point x="2168.0" y="2260.0" />
+      <point x="2168.0" y="2660.0" />
+      <point x="2128.0" y="2660.0" />
+      <point x="2128.0" y="2740.0" />
+      <point x="2129.25" y="2740.0" />
+      <point x="-38.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.service.CultureService" target="de.traumastudios.ExoCompanionAPI.culture.exception.CultureNotFoundException" relationship="CREATE">
+      <point x="40.25" y="-14.0" />
+      <point x="1528.25" y="800.0" />
+      <point x="1528.0" y="800.0" />
+      <point x="1528.0" y="480.0" />
+      <point x="1608.0" y="480.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService" target="de.traumastudios.ExoCompanionAPI.feedingtype.exception.FeedingTypeNotFoundException" relationship="CREATE">
+      <point x="51.5" y="-14.0" />
+      <point x="1319.5" y="1640.0" />
+      <point x="1328.0" y="1640.0" />
+      <point x="1328.0" y="1360.0" />
+      <point x="1568.0" y="1360.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.service.PlantService" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="CREATE">
+      <point x="36.25" y="-14.0" />
+      <point x="2284.25" y="1180.0" />
+      <point x="2268.0" y="1180.0" />
+      <point x="2268.0" y="940.0" />
+      <point x="457.6666666666665" y="940.0" />
+      <point x="29.666666666666657" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementController" target="de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService" relationship="TO_ONE">
+      <point x="55.75" y="-14.0" />
+      <point x="2403.75" y="2560.0" />
+      <point x="2408.0" y="2560.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity" relationship="TO_MANY">
+      <point x="61.666666666666686" y="14.0" />
+      <point x="4149.666666666667" y="1720.0" />
+      <point x="4148.0" y="1720.0" />
+      <point x="4148.0" y="1980.0" />
+      <point x="4221.75" y="1980.0" />
+      <point x="33.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="-33.75" y="-14.0" />
+      <point x="4154.25" y="2000.0" />
+      <point x="4088.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.service.OriginService" target="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" relationship="CREATE">
+      <point x="38.0" y="-14.0" />
+      <point x="3306.0" y="1640.0" />
+      <point x="3288.0" y="1640.0" />
+      <point x="3288.0" y="1300.0" />
+      <point x="3028.0" y="1300.0" />
+      <point x="3028.0" y="1180.0" />
+      <point x="3088.0" y="1180.0" />
+      <point x="3088.0" y="580.0" />
+      <point x="220.0" y="580.0" />
+      <point x="32.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.service.FoodService" target="de.traumastudios.ExoCompanionAPI.food.repository.FoodRepository" relationship="TO_ONE">
+      <point x="-36.5" y="-14.0" />
+      <point x="1791.5" y="2220.0" />
+      <point x="768.0" y="2220.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.food.domain.Food" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1620.0" />
+      <point x="-272.0" y="1620.0" />
+      <point x="-272.0" y="1300.0" />
+      <point x="-142.0" y="1300.0" />
+      <point x="-30.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.domain.Food" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="-112.0" y="1260.0" />
+      <point x="-32.0" y="1260.0" />
+      <point x="-32.0" y="1580.0" />
+      <point x="88.0" y="1580.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="668.0" y="560.0" />
+      <point x="588.0" y="560.0" />
+      <point x="588.0" y="800.0" />
+      <point x="450.25" y="800.0" />
+      <point x="22.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.difficulty.domain.Difficulty" relationship="TO_MANY">
+      <point x="-22.25" y="-14.0" />
+      <point x="405.75" y="800.0" />
+      <point x="408.0" y="800.0" />
+      <point x="408.0" y="520.0" />
+      <point x="628.3333333333334" y="520.0" />
+      <point x="-39.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="46.33333333333333" y="14.0" />
+      <point x="2474.3333333333335" y="900.0" />
+      <point x="2708.0" y="900.0" />
+      <point x="2708.0" y="1180.0" />
+      <point x="2538.75" y="1180.0" />
+      <point x="30.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" relationship="TO_MANY">
+      <point x="-30.75" y="-14.0" />
+      <point x="2477.25" y="1180.0" />
+      <point x="2508.0" y="1180.0" />
+      <point x="2508.0" y="920.0" />
+      <point x="2428.0" y="920.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService" target="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorRepository" relationship="TO_ONE">
+      <point x="43.5" y="-14.0" />
+      <point x="1891.5" y="1580.0" />
+      <point x="2028.0" y="1580.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService" target="de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior" relationship="CREATE">
+      <point x="-43.5" y="-14.0" />
+      <point x="1804.5" y="1580.0" />
+      <point x="1748.0" y="1580.0" />
+      <point x="1748.0" y="1340.0" />
+      <point x="447.3333333333335" y="1340.0" />
+      <point x="39.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="1648.0" y="2360.0" />
+      <point x="1648.0" y="2160.0" />
+      <point x="1728.0" y="2160.0" />
+      <point x="1728.0" y="1720.0" />
+      <point x="1708.0" y="1720.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="61.333333333333314" y="14.0" />
+      <point x="1769.3333333333335" y="1720.0" />
+      <point x="1768.0" y="1720.0" />
+      <point x="1768.0" y="2180.0" />
+      <point x="1688.0" y="2180.0" />
+      <point x="1688.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService" target="de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed" relationship="CREATE">
+      <point x="-48.5" y="-14.0" />
+      <point x="1719.5" y="240.0" />
+      <point x="1628.0" y="240.0" />
+      <point x="1628.0" y="100.0" />
+      <point x="494.0" y="100.0" />
+      <point x="46.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService" target="de.traumastudios.ExoCompanionAPI.requirement.exception.RequirementNotFoundException" relationship="CREATE">
+      <point x="50.5" y="-14.0" />
+      <point x="2458.5" y="2280.0" />
+      <point x="2468.0" y="2280.0" />
+      <point x="2468.0" y="2120.0" />
+      <point x="2748.0" y="2120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyController" target="de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService" relationship="TO_ONE">
+      <point x="49.0" y="-14.0" />
+      <point x="3197.0" y="1180.0" />
+      <point x="3208.0" y="1180.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" target="de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedDTO" relationship="TO_MANY">
+      <point x="34.75" y="-14.0" />
+      <point x="2462.75" y="740.0" />
+      <point x="2448.0" y="740.0" />
+      <point x="2448.0" y="620.0" />
+      <point x="2445.3333333333335" y="620.0" />
+      <point x="57.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4588.0" y="2180.0" />
+      <point x="4588.0" y="380.0" />
+      <point x="4668.0" y="380.0" />
+      <point x="4668.0" y="60.0" />
+      <point x="3808.0" y="60.0" />
+      <point x="3808.0" y="40.0" />
+      <point x="3786.666666666667" y="40.0" />
+      <point x="58.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedDTO" target="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2388.0" y="740.0" />
+      <point x="2393.25" y="740.0" />
+      <point x="-34.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3728.0" y="220.0" />
+      <point x="4708.0" y="220.0" />
+      <point x="4708.0" y="400.0" />
+      <point x="4668.0" y="400.0" />
+      <point x="4668.0" y="1080.0" />
+      <point x="4628.0" y="1080.0" />
+      <point x="4628.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyController" target="de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO" relationship="CREATE">
+      <point x="-49.0" y="-14.0" />
+      <point x="3099.0" y="1120.0" />
+      <point x="2879.0" y="1120.0" />
+      <point x="51.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeController" target="de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService" relationship="TO_ONE">
+      <point x="-56.75" y="-14.0" />
+      <point x="1331.25" y="2000.0" />
+      <point x="1268.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4188.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4233.0" y="2180.0" />
+      <point x="45.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService" target="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationRepository" relationship="TO_ONE">
+      <point x="-46.75" y="-14.0" />
+      <point x="2721.25" y="300.0" />
+      <point x="2728.0" y="300.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService" target="de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeRepository" relationship="TO_ONE">
+      <point x="-45.75" y="-14.0" />
+      <point x="822.25" y="800.0" />
+      <point x="788.0" y="800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1520.0" />
+      <point x="3948.0" y="1520.0" />
+      <point x="3948.0" y="1080.0" />
+      <point x="3928.0" y="1080.0" />
+      <point x="3928.0" y="820.0" />
+      <point x="3808.0" y="820.0" />
+      <point x="3808.0" y="40.0" />
+      <point x="3786.666666666667" y="40.0" />
+      <point x="58.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationController" target="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" relationship="CREATE">
+      <point x="-52.0" y="-14.0" />
+      <point x="2656.0" y="600.0" />
+      <point x="2263.0" y="600.0" />
+      <point x="55.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3728.0" y="220.0" />
+      <point x="3428.0" y="220.0" />
+      <point x="3428.0" y="820.0" />
+      <point x="3668.0" y="820.0" />
+      <point x="3668.0" y="1580.0" />
+      <point x="4048.0" y="1580.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-20.666666666666686" y="2140.0" />
+      <point x="-48.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="28.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1720.0" />
+      <point x="2148.0" y="1720.0" />
+      <point x="2148.0" y="1400.0" />
+      <point x="2348.0" y="1400.0" />
+      <point x="2348.0" y="1160.0" />
+      <point x="2388.0" y="1160.0" />
+      <point x="2388.0" y="900.0" />
+      <point x="2288.0" y="900.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="42.66666666666667" y="14.0" />
+      <point x="2330.6666666666665" y="880.0" />
+      <point x="2628.0" y="880.0" />
+      <point x="2628.0" y="1060.0" />
+      <point x="2388.0" y="1060.0" />
+      <point x="2388.0" y="1740.0" />
+      <point x="2428.0" y="1740.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.controller.FoodController" target="de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO" relationship="CREATE">
+      <point x="-41.75" y="-14.0" />
+      <point x="1646.25" y="2480.0" />
+      <point x="928.0" y="2480.0" />
+      <point x="928.0" y="2280.0" />
+      <point x="1168.0" y="2280.0" />
+      <point x="1168.0" y="1720.0" />
+      <point x="1386.6666666666667" y="1720.0" />
+      <point x="-41.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3568.0" y="1260.0" />
+      <point x="3888.0" y="1260.0" />
+      <point x="3888.0" y="1560.0" />
+      <point x="4048.0" y="1560.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1460.0" />
+      <point x="4408.0" y="1460.0" />
+      <point x="4408.0" y="1340.0" />
+      <point x="3622.3333333333335" y="1340.0" />
+      <point x="54.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4068.0" y="460.0" />
+      <point x="3968.0" y="460.0" />
+      <point x="3968.0" y="800.0" />
+      <point x="4014.5" y="800.0" />
+      <point x="-33.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity" relationship="TO_MANY">
+      <point x="33.5" y="-14.0" />
+      <point x="4081.5" y="800.0" />
+      <point x="4088.0" y="800.0" />
+      <point x="4088.0" y="420.0" />
+      <point x="4122.666666666667" y="420.0" />
+      <point x="54.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2828.0" y="900.0" />
+      <point x="2708.0" y="900.0" />
+      <point x="2708.0" y="1180.0" />
+      <point x="2538.75" y="1180.0" />
+      <point x="30.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyDTO" relationship="TO_MANY">
+      <point x="-30.75" y="-14.0" />
+      <point x="2477.25" y="1180.0" />
+      <point x="2508.0" y="1180.0" />
+      <point x="2508.0" y="920.0" />
+      <point x="2777.0" y="920.0" />
+      <point x="-51.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" target="de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity" relationship="TO_MANY">
+      <point x="37.5" y="-14.0" />
+      <point x="3945.5" y="300.0" />
+      <point x="3948.0" y="300.0" />
+      <point x="3948.0" y="140.0" />
+      <point x="3609.0" y="140.0" />
+      <point x="61.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity" target="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3548.0" y="200.0" />
+      <point x="3688.0" y="200.0" />
+      <point x="3688.0" y="240.0" />
+      <point x="3870.5" y="240.0" />
+      <point x="-37.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService" target="de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyRepository" relationship="TO_ONE">
+      <point x="43.75" y="-14.0" />
+      <point x="3251.75" y="800.0" />
+      <point x="3308.0" y="800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorController" target="de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService" relationship="TO_ONE">
+      <point x="-48.75" y="-14.0" />
+      <point x="1839.25" y="2000.0" />
+      <point x="1848.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4708.0" y="2180.0" />
+      <point x="4708.0" y="560.0" />
+      <point x="4268.0" y="560.0" />
+      <point x="4268.0" y="440.0" />
+      <point x="3754.333333333333" y="440.0" />
+      <point x="46.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3708.0" y="800.0" />
+      <point x="3328.0" y="800.0" />
+      <point x="3328.0" y="1180.0" />
+      <point x="3268.0" y="1180.0" />
+      <point x="3268.0" y="1620.0" />
+      <point x="3808.0" y="1620.0" />
+      <point x="3808.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService" target="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementRepository" relationship="TO_ONE">
+      <point x="-50.5" y="-14.0" />
+      <point x="2357.5" y="2280.0" />
+      <point x="2348.0" y="2280.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2208.0" y="1000.0" />
+      <point x="2428.0" y="1000.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementController" target="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO" relationship="CREATE">
+      <point x="-55.75" y="-14.0" />
+      <point x="2292.25" y="2560.0" />
+      <point x="2108.0" y="2560.0" />
+      <point x="60.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1720.0" />
+      <point x="2108.0" y="1720.0" />
+      <point x="2108.0" y="1380.0" />
+      <point x="2148.0" y="1380.0" />
+      <point x="2148.0" y="1080.0" />
+      <point x="1628.0" y="1080.0" />
+      <point x="1628.0" y="600.0" />
+      <point x="1688.0" y="600.0" />
+      <point x="1688.0" y="380.0" />
+      <point x="2153.0" y="380.0" />
+      <point x="-55.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService" target="de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity" relationship="CREATE">
+      <point x="-48.5" y="-14.0" />
+      <point x="1719.5" y="240.0" />
+      <point x="1628.0" y="240.0" />
+      <point x="1628.0" y="100.0" />
+      <point x="3487.0" y="100.0" />
+      <point x="-61.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1460.0" />
+      <point x="-172.0" y="1460.0" />
+      <point x="-172.0" y="1120.0" />
+      <point x="88.0" y="1120.0" />
+      <point x="88.0" y="880.0" />
+      <point x="398.33333333333337" y="880.0" />
+      <point x="-29.666666666666664" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="428.0" y="1100.0" />
+      <point x="-52.0" y="1100.0" />
+      <point x="-52.0" y="1620.0" />
+      <point x="88.0" y="1620.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityController" target="de.traumastudios.ExoCompanionAPI.rarity.service.RarityService" relationship="TO_ONE">
+      <point x="-42.75" y="-14.0" />
+      <point x="1005.25" y="2000.0" />
+      <point x="1028.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.controller.CategoryController" target="de.traumastudios.ExoCompanionAPI.category.service.CategoryService" relationship="TO_ONE">
+      <point x="49.5" y="-14.0" />
+      <point x="2257.5" y="2920.0" />
+      <point x="2308.0" y="2920.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService" target="de.traumastudios.ExoCompanionAPI.planttype.exception.PlantTypeNotFoundException" relationship="CREATE">
+      <point x="45.75" y="-14.0" />
+      <point x="913.75" y="800.0" />
+      <point x="908.0" y="800.0" />
+      <point x="908.0" y="500.0" />
+      <point x="948.0" y="500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="108.0" y="1260.0" />
+      <point x="128.0" y="1260.0" />
+      <point x="128.0" y="1420.0" />
+      <point x="88.0" y="1420.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1440.0" />
+      <point x="-232.0" y="1440.0" />
+      <point x="-232.0" y="1320.0" />
+      <point x="76.66666666666669" y="1320.0" />
+      <point x="-31.333333333333336" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2508.0" y="1640.0" />
+      <point x="2708.0" y="1640.0" />
+      <point x="2708.0" y="2000.0" />
+      <point x="2568.0" y="2000.0" />
+      <point x="2568.0" y="2160.0" />
+      <point x="2608.0" y="2160.0" />
+      <point x="2608.0" y="2480.0" />
+      <point x="3268.0" y="2480.0" />
+      <point x="3268.0" y="2660.0" />
+      <point x="2128.0" y="2660.0" />
+      <point x="2128.0" y="2740.0" />
+      <point x="2129.25" y="2740.0" />
+      <point x="-38.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="38.75" y="-14.0" />
+      <point x="2206.75" y="2740.0" />
+      <point x="2208.0" y="2740.0" />
+      <point x="2208.0" y="2640.0" />
+      <point x="3508.0" y="2640.0" />
+      <point x="3508.0" y="2440.0" />
+      <point x="3288.0" y="2440.0" />
+      <point x="3288.0" y="1940.0" />
+      <point x="3128.0" y="1940.0" />
+      <point x="3128.0" y="1620.0" />
+      <point x="3008.0" y="1620.0" />
+      <point x="3008.0" y="1260.0" />
+      <point x="2549.0" y="1260.0" />
+      <point x="41.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.controller.FoodController" target="de.traumastudios.ExoCompanionAPI.food.service.FoodService" relationship="TO_ONE">
+      <point x="41.75" y="-14.0" />
+      <point x="1729.75" y="2500.0" />
+      <point x="1828.0" y="2500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService" target="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity" relationship="CREATE">
+      <point x="51.5" y="-14.0" />
+      <point x="1319.5" y="1640.0" />
+      <point x="1328.0" y="1640.0" />
+      <point x="1328.0" y="1360.0" />
+      <point x="3323.0" y="1360.0" />
+      <point x="-65.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-272.0" y="2140.0" />
+      <point x="-272.0" y="1660.0" />
+      <point x="-312.0" y="1660.0" />
+      <point x="-312.0" y="320.0" />
+      <point x="-252.0" y="320.0" />
+      <point x="-252.0" y="100.0" />
+      <point x="64.33333333333331" y="100.0" />
+      <point x="-43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="108.0" y="820.0" />
+      <point x="328.0" y="820.0" />
+      <point x="328.0" y="1480.0" />
+      <point x="288.0" y="1480.0" />
+      <point x="288.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="53.666666666666686" y="14.0" />
+      <point x="2641.6666666666665" y="900.0" />
+      <point x="2708.0" y="900.0" />
+      <point x="2708.0" y="1180.0" />
+      <point x="2538.75" y="1180.0" />
+      <point x="30.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO" relationship="TO_MANY">
+      <point x="-30.75" y="-14.0" />
+      <point x="2477.25" y="1180.0" />
+      <point x="2508.0" y="1180.0" />
+      <point x="2508.0" y="920.0" />
+      <point x="2588.0" y="920.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService" target="de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement" relationship="CREATE">
+      <point x="50.5" y="-14.0" />
+      <point x="2458.5" y="2280.0" />
+      <point x="2468.0" y="2280.0" />
+      <point x="2468.0" y="2120.0" />
+      <point x="76.66666666666652" y="2120.0" />
+      <point x="48.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService" target="de.traumastudios.ExoCompanionAPI.growspeed.exception.GrowspeedNotFoundException" relationship="CREATE">
+      <point x="-48.5" y="-14.0" />
+      <point x="1719.5" y="240.0" />
+      <point x="1628.0" y="240.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.exception.AquaticAnimalNotFoundException" relationship="CREATE">
+      <point x="-54.0" y="-14.0" />
+      <point x="954.0" y="2500.0" />
+      <point x="628.0" y="2500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2508.0" y="1640.0" />
+      <point x="2468.0" y="1640.0" />
+      <point x="2468.0" y="1740.0" />
+      <point x="2428.0" y="1740.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1720.0" />
+      <point x="2348.0" y="1720.0" />
+      <point x="2348.0" y="1620.0" />
+      <point x="3008.0" y="1620.0" />
+      <point x="3008.0" y="1260.0" />
+      <point x="2549.0" y="1260.0" />
+      <point x="41.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="-41.5" y="-14.0" />
+      <point x="4126.5" y="2500.0" />
+      <point x="4128.0" y="2500.0" />
+      <point x="4128.0" y="2440.0" />
+      <point x="4288.0" y="2440.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" relationship="TO_MANY">
+      <point x="68.33333333333334" y="14.0" />
+      <point x="4356.333333333333" y="2420.0" />
+      <point x="4208.0" y="2420.0" />
+      <point x="4208.0" y="2500.0" />
+      <point x="4209.5" y="2500.0" />
+      <point x="41.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="-23.5" y="-14.0" />
+      <point x="84.5" y="1120.0" />
+      <point x="88.0" y="1120.0" />
+      <point x="88.0" y="880.0" />
+      <point x="398.33333333333337" y="880.0" />
+      <point x="-29.666666666666664" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="428.0" y="1100.0" />
+      <point x="131.5" y="1100.0" />
+      <point x="23.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.substrate.domain.Substrate" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="406.66666666666663" y="2140.0" />
+      <point x="-41.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.domain.Substrate" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="448.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="108.0" y="1260.0" />
+      <point x="128.0" y="1260.0" />
+      <point x="128.0" y="1640.0" />
+      <point x="168.0" y="1640.0" />
+      <point x="168.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="1320.0" />
+      <point x="76.66666666666669" y="1320.0" />
+      <point x="-31.333333333333336" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.service.OriginService" target="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" relationship="CREATE">
+      <point x="38.0" y="-14.0" />
+      <point x="3306.0" y="1640.0" />
+      <point x="3288.0" y="1640.0" />
+      <point x="3288.0" y="1300.0" />
+      <point x="4041.0" y="1300.0" />
+      <point x="-47.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.service.RarityService" target="de.traumastudios.ExoCompanionAPI.rarity.exception.RarityNotFoundException" relationship="CREATE">
+      <point x="37.5" y="-14.0" />
+      <point x="1065.5" y="1640.0" />
+      <point x="1068.0" y="1640.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService" target="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" relationship="CREATE">
+      <point x="46.75" y="-14.0" />
+      <point x="2814.75" y="300.0" />
+      <point x="2808.0" y="300.0" />
+      <point x="2808.0" y="120.0" />
+      <point x="151.66666666666652" y="120.0" />
+      <point x="43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.service.CategoryService" target="de.traumastudios.ExoCompanionAPI.category.domain.Category" relationship="CREATE">
+      <point x="44.25" y="-14.0" />
+      <point x="2352.25" y="2740.0" />
+      <point x="4168.0" y="2740.0" />
+      <point x="4168.0" y="2680.0" />
+      <point x="-72.0" y="2680.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.controller.OriginController" target="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" relationship="CREATE">
+      <point x="-43.25" y="-14.0" />
+      <point x="3124.75" y="1960.0" />
+      <point x="3011.3333333333335" y="1960.0" />
+      <point x="43.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalRepository" relationship="TO_ONE">
+      <point x="54.0" y="-14.0" />
+      <point x="1062.0" y="2500.0" />
+      <point x="1068.0" y="2500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.requirement.controller.RequirementDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="-60.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="448.0" y="2360.0" />
+      <point x="448.0" y="2280.0" />
+      <point x="608.0" y="2280.0" />
+      <point x="608.0" y="600.0" />
+      <point x="1688.0" y="600.0" />
+      <point x="1688.0" y="380.0" />
+      <point x="2153.0" y="380.0" />
+      <point x="-55.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2208.0" y="680.0" />
+      <point x="1588.0" y="680.0" />
+      <point x="1588.0" y="960.0" />
+      <point x="688.0" y="960.0" />
+      <point x="688.0" y="1660.0" />
+      <point x="888.0" y="1660.0" />
+      <point x="888.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="2928.0" y="2360.0" />
+      <point x="2928.0" y="1720.0" />
+      <point x="2924.6666666666665" y="1720.0" />
+      <point x="-43.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2968.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService" target="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity" relationship="CREATE">
+      <point x="-43.5" y="-14.0" />
+      <point x="1804.5" y="1580.0" />
+      <point x="1748.0" y="1580.0" />
+      <point x="1748.0" y="1340.0" />
+      <point x="3513.6666666666665" y="1340.0" />
+      <point x="-54.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.service.CategoryService" target="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" relationship="CREATE">
+      <point x="44.25" y="-14.0" />
+      <point x="2352.25" y="2740.0" />
+      <point x="4168.0" y="2740.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.service.CultureService" target="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" relationship="CREATE">
+      <point x="40.25" y="-14.0" />
+      <point x="1528.25" y="800.0" />
+      <point x="1528.0" y="800.0" />
+      <point x="1528.0" y="480.0" />
+      <point x="3858.0" y="480.0" />
+      <point x="-50.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService" target="de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateEntity" relationship="CREATE">
+      <point x="45.0" y="-14.0" />
+      <point x="3493.0" y="2280.0" />
+      <point x="3488.0" y="2280.0" />
+      <point x="3488.0" y="2100.0" />
+      <point x="3848.0" y="2100.0" />
+      <point x="3848.0" y="1600.0" />
+      <point x="3751.666666666667" y="1600.0" />
+      <point x="-56.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="108.0" y="320.0" />
+      <point x="28.0" y="320.0" />
+      <point x="28.0" y="1620.0" />
+      <point x="88.0" y="1620.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.coloration.domain.Coloration" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1460.0" />
+      <point x="-252.0" y="1460.0" />
+      <point x="-252.0" y="100.0" />
+      <point x="64.33333333333331" y="100.0" />
+      <point x="-43.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedController" target="de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService" relationship="TO_ONE">
+      <point x="-53.75" y="-14.0" />
+      <point x="2014.25" y="740.0" />
+      <point x="1768.0" y="740.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.service.PlantService" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantRepository" relationship="TO_ONE">
+      <point x="-36.25" y="-14.0" />
+      <point x="2211.75" y="1060.0" />
+      <point x="1728.0" y="1060.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType" relationship="TO_MANY">
+      <point x="-22.25" y="-14.0" />
+      <point x="405.75" y="800.0" />
+      <point x="408.0" y="800.0" />
+      <point x="408.0" y="520.0" />
+      <point x="265.66666666666663" y="520.0" />
+      <point x="-42.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="308.0" y="560.0" />
+      <point x="588.0" y="560.0" />
+      <point x="588.0" y="800.0" />
+      <point x="450.25" y="800.0" />
+      <point x="22.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="38.75" y="-14.0" />
+      <point x="2206.75" y="2740.0" />
+      <point x="2208.0" y="2740.0" />
+      <point x="2208.0" y="2640.0" />
+      <point x="2028.0" y="2640.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" relationship="TO_MANY">
+      <point x="-64.66666666666666" y="14.0" />
+      <point x="1963.3333333333335" y="2660.0" />
+      <point x="2128.0" y="2660.0" />
+      <point x="2128.0" y="2740.0" />
+      <point x="2129.25" y="2740.0" />
+      <point x="-38.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.controller.ColorationController" target="de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService" relationship="TO_ONE">
+      <point x="52.0" y="-14.0" />
+      <point x="2760.0" y="740.0" />
+      <point x="2768.0" y="740.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3708.0" y="1580.0" />
+      <point x="4048.0" y="1580.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.service.FoodService" target="de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity" relationship="CREATE">
+      <point x="36.5" y="-14.0" />
+      <point x="1864.5" y="2280.0" />
+      <point x="1868.0" y="2280.0" />
+      <point x="1868.0" y="2140.0" />
+      <point x="4143.0" y="2140.0" />
+      <point x="-45.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1520.0" />
+      <point x="3988.0" y="1520.0" />
+      <point x="3988.0" y="1080.0" />
+      <point x="4268.0" y="1080.0" />
+      <point x="4268.0" y="440.0" />
+      <point x="3754.333333333333" y="440.0" />
+      <point x="46.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3708.0" y="560.0" />
+      <point x="3968.0" y="560.0" />
+      <point x="3968.0" y="800.0" />
+      <point x="4014.5" y="800.0" />
+      <point x="-33.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" relationship="TO_MANY">
+      <point x="33.5" y="-14.0" />
+      <point x="4081.5" y="800.0" />
+      <point x="4088.0" y="800.0" />
+      <point x="4088.0" y="780.0" />
+      <point x="4268.0" y="780.0" />
+      <point x="4268.0" y="440.0" />
+      <point x="3754.333333333333" y="440.0" />
+      <point x="46.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1860.0" />
+      <point x="1728.0" y="1860.0" />
+      <point x="1728.0" y="1720.0" />
+      <point x="1708.0" y="1720.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="61.333333333333314" y="14.0" />
+      <point x="1769.3333333333335" y="1720.0" />
+      <point x="1768.0" y="1720.0" />
+      <point x="1768.0" y="1780.0" />
+      <point x="2428.0" y="1780.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" target="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3728.0" y="160.0" />
+      <point x="3688.0" y="160.0" />
+      <point x="3688.0" y="240.0" />
+      <point x="3870.5" y="240.0" />
+      <point x="-37.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" target="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" relationship="TO_MANY">
+      <point x="37.5" y="-14.0" />
+      <point x="3945.5" y="300.0" />
+      <point x="3948.0" y="300.0" />
+      <point x="3948.0" y="80.0" />
+      <point x="3808.0" y="80.0" />
+      <point x="3808.0" y="40.0" />
+      <point x="3786.666666666667" y="40.0" />
+      <point x="58.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="1360.0" />
+      <point x="4135.0" y="1360.0" />
+      <point x="47.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4088.0" y="1260.0" />
+      <point x="4168.0" y="1260.0" />
+      <point x="4168.0" y="1500.0" />
+      <point x="4288.0" y="1500.0" />
+      <point x="4288.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="CREATE">
+      <point x="-54.0" y="-14.0" />
+      <point x="954.0" y="2500.0" />
+      <point x="628.0" y="2500.0" />
+      <point x="628.0" y="2400.0" />
+      <point x="4219.666666666667" y="2400.0" />
+      <point x="-68.33333333333334" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityController" target="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" relationship="CREATE">
+      <point x="42.75" y="-14.0" />
+      <point x="1090.75" y="2000.0" />
+      <point x="1148.0" y="2000.0" />
+      <point x="1148.0" y="1560.0" />
+      <point x="1248.0" y="1560.0" />
+      <point x="1248.0" y="980.0" />
+      <point x="2245.3333333333335" y="980.0" />
+      <point x="-42.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.service.PlantService" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="CREATE">
+      <point x="36.25" y="-14.0" />
+      <point x="2284.25" y="1180.0" />
+      <point x="2268.0" y="1180.0" />
+      <point x="2268.0" y="940.0" />
+      <point x="4003.333333333333" y="940.0" />
+      <point x="-44.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-192.0" y="2140.0" />
+      <point x="-192.0" y="1280.0" />
+      <point x="368.66666666666663" y="1280.0" />
+      <point x="-39.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.domain.Behavior" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="408.0" y="1660.0" />
+      <point x="528.0" y="1660.0" />
+      <point x="528.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" target="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" relationship="TO_MANY">
+      <point x="-30.75" y="-14.0" />
+      <point x="2477.25" y="1180.0" />
+      <point x="2508.0" y="1180.0" />
+      <point x="2508.0" y="960.0" />
+      <point x="2388.0" y="960.0" />
+      <point x="2388.0" y="900.0" />
+      <point x="2288.0" y="900.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="TO_MANY">
+      <point x="42.66666666666667" y="14.0" />
+      <point x="2330.6666666666665" y="880.0" />
+      <point x="2628.0" y="880.0" />
+      <point x="2628.0" y="1160.0" />
+      <point x="2708.0" y="1160.0" />
+      <point x="2708.0" y="1180.0" />
+      <point x="2538.75" y="1180.0" />
+      <point x="30.75" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.domain.Food" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="-112.0" y="1260.0" />
+      <point x="-32.0" y="1260.0" />
+      <point x="-32.0" y="1340.0" />
+      <point x="-152.0" y="1340.0" />
+      <point x="-152.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.food.domain.Food" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-312.0" y="2140.0" />
+      <point x="-312.0" y="1640.0" />
+      <point x="-272.0" y="1640.0" />
+      <point x="-272.0" y="1300.0" />
+      <point x="-142.0" y="1300.0" />
+      <point x="-30.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4048.0" y="1100.0" />
+      <point x="4548.0" y="1100.0" />
+      <point x="4548.0" y="1640.0" />
+      <point x="4508.0" y="1640.0" />
+      <point x="4508.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4668.0" y="2180.0" />
+      <point x="4668.0" y="1120.0" />
+      <point x="4128.0" y="1120.0" />
+      <point x="4128.0" y="880.0" />
+      <point x="4092.666666666667" y="880.0" />
+      <point x="44.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.service.LocationService" target="de.traumastudios.ExoCompanionAPI.location.repository.LocationEntity" relationship="CREATE">
+      <point x="-43.25" y="-14.0" />
+      <point x="4424.75" y="800.0" />
+      <point x="4348.0" y="800.0" />
+      <point x="4348.0" y="540.0" />
+      <point x="4282.0" y="540.0" />
+      <point x="54.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3388.0" y="1280.0" />
+      <point x="3928.0" y="1280.0" />
+      <point x="3928.0" y="1440.0" />
+      <point x="4048.0" y="1440.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1440.0" />
+      <point x="4368.0" y="1440.0" />
+      <point x="4368.0" y="1320.0" />
+      <point x="3453.0" y="1320.0" />
+      <point x="65.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.controller.CultureController" target="de.traumastudios.ExoCompanionAPI.culture.service.CultureService" relationship="TO_ONE">
+      <point x="-45.5" y="-14.0" />
+      <point x="1862.5" y="1120.0" />
+      <point x="1488.0" y="1120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1800.0" />
+      <point x="2008.0" y="1800.0" />
+      <point x="2008.0" y="1720.0" />
+      <point x="1988.0" y="1720.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="50.66666666666667" y="14.0" />
+      <point x="2038.6666666666665" y="1720.0" />
+      <point x="2048.0" y="1720.0" />
+      <point x="2048.0" y="1760.0" />
+      <point x="2428.0" y="1760.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="428.0" y="560.0" />
+      <point x="588.0" y="560.0" />
+      <point x="588.0" y="800.0" />
+      <point x="450.25" y="800.0" />
+      <point x="22.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" relationship="TO_MANY">
+      <point x="-22.25" y="-14.0" />
+      <point x="405.75" y="800.0" />
+      <point x="408.0" y="800.0" />
+      <point x="408.0" y="520.0" />
+      <point x="393.0" y="520.0" />
+      <point x="-35.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="CREATE">
+      <point x="-49.0" y="-14.0" />
+      <point x="3659.0" y="2560.0" />
+      <point x="3668.0" y="2560.0" />
+      <point x="3668.0" y="2420.0" />
+      <point x="3848.0" y="2420.0" />
+      <point x="3848.0" y="2280.0" />
+      <point x="3968.0" y="2280.0" />
+      <point x="3968.0" y="2020.0" />
+      <point x="4026.333333333333" y="2020.0" />
+      <point x="-61.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalController" target="de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService" relationship="TO_ONE">
+      <point x="54.25" y="-14.0" />
+      <point x="3702.25" y="2700.0" />
+      <point x="3708.0" y="2700.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4308.0" y="1260.0" />
+      <point x="4328.0" y="1260.0" />
+      <point x="4328.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4548.0" y="2180.0" />
+      <point x="4548.0" y="1660.0" />
+      <point x="4488.0" y="1660.0" />
+      <point x="4488.0" y="1380.0" />
+      <point x="4371.666666666667" y="1380.0" />
+      <point x="63.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.service.LocationService" target="de.traumastudios.ExoCompanionAPI.location.repository.LocationRepository" relationship="TO_ONE">
+      <point x="43.25" y="-14.0" />
+      <point x="4511.25" y="800.0" />
+      <point x="4548.0" y="800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.service.LocationService" target="de.traumastudios.ExoCompanionAPI.location.domain.Location" relationship="CREATE">
+      <point x="-43.25" y="-14.0" />
+      <point x="4424.75" y="800.0" />
+      <point x="4348.0" y="800.0" />
+      <point x="4348.0" y="540.0" />
+      <point x="587.0" y="540.0" />
+      <point x="39.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="1208.0" y="2360.0" />
+      <point x="1208.0" y="1740.0" />
+      <point x="1428.0" y="1740.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.controller.FoodDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="41.33333333333333" y="14.0" />
+      <point x="1469.3333333333333" y="1660.0" />
+      <point x="1468.0" y="1660.0" />
+      <point x="1468.0" y="1920.0" />
+      <point x="1248.0" y="1920.0" />
+      <point x="1248.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-392.0" y="2140.0" />
+      <point x="-392.0" y="1120.0" />
+      <point x="88.0" y="1120.0" />
+      <point x="88.0" y="880.0" />
+      <point x="398.33333333333337" y="880.0" />
+      <point x="-29.666666666666664" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="428.0" y="1100.0" />
+      <point x="528.0" y="1100.0" />
+      <point x="528.0" y="1580.0" />
+      <point x="368.0" y="1580.0" />
+      <point x="368.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService" target="de.traumastudios.ExoCompanionAPI.difficulty.exception.DifficultyNotFoundException" relationship="CREATE">
+      <point x="-43.75" y="-14.0" />
+      <point x="3164.25" y="800.0" />
+      <point x="3168.0" y="800.0" />
+      <point x="3168.0" y="400.0" />
+      <point x="3148.0" y="400.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateController" target="de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateDTO" relationship="CREATE">
+      <point x="-50.25" y="-14.0" />
+      <point x="3337.75" y="2460.0" />
+      <point x="2568.0" y="2460.0" />
+      <point x="2568.0" y="2180.0" />
+      <point x="2528.0" y="2180.0" />
+      <point x="2528.0" y="1980.0" />
+      <point x="2660.6666666666665" y="1980.0" />
+      <point x="52.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService" target="de.traumastudios.ExoCompanionAPI.landanimal.exception.LandAnimalNotFoundException" relationship="CREATE">
+      <point x="-49.0" y="-14.0" />
+      <point x="3659.0" y="2560.0" />
+      <point x="3668.0" y="2560.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed" target="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="448.0" y="300.0" />
+      <point x="454.25" y="300.0" />
+      <point x="26.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" target="de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed" relationship="TO_MANY">
+      <point x="-26.25" y="-14.0" />
+      <point x="401.75" y="300.0" />
+      <point x="408.0" y="300.0" />
+      <point x="408.0" y="160.0" />
+      <point x="402.0" y="160.0" />
+      <point x="-46.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="36.5" y="-14.0" />
+      <point x="64.5" y="1980.0" />
+      <point x="48.0" y="1980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.requirement.domain.Requirement" relationship="TO_MANY">
+      <point x="-53.33333333333333" y="14.0" />
+      <point x="-5.333333333333314" y="1720.0" />
+      <point x="-12.0" y="1720.0" />
+      <point x="-12.0" y="2000.0" />
+      <point x="-8.5" y="2000.0" />
+      <point x="-36.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.coloration.service.ColorationService" target="de.traumastudios.ExoCompanionAPI.coloration.repository.ColorationEntity" relationship="CREATE">
+      <point x="46.75" y="-14.0" />
+      <point x="2814.75" y="300.0" />
+      <point x="2808.0" y="300.0" />
+      <point x="2808.0" y="120.0" />
+      <point x="3669.3333333333335" y="120.0" />
+      <point x="-58.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.service.BehaviorService" target="de.traumastudios.ExoCompanionAPI.behavior.exception.BehaviorNotFoundException" relationship="CREATE">
+      <point x="-43.5" y="-14.0" />
+      <point x="1804.5" y="1580.0" />
+      <point x="1748.0" y="1580.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="CREATE">
+      <point x="-54.0" y="-14.0" />
+      <point x="954.0" y="2500.0" />
+      <point x="628.0" y="2500.0" />
+      <point x="628.0" y="2400.0" />
+      <point x="128.0" y="2400.0" />
+      <point x="128.0" y="2000.0" />
+      <point x="101.33333333333331" y="2000.0" />
+      <point x="53.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.service.RarityService" target="de.traumastudios.ExoCompanionAPI.rarity.domain.Rarity" relationship="CREATE">
+      <point x="37.5" y="-14.0" />
+      <point x="1065.5" y="1640.0" />
+      <point x="1068.0" y="1640.0" />
+      <point x="1068.0" y="1380.0" />
+      <point x="139.33333333333337" y="1380.0" />
+      <point x="31.333333333333343" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedController" target="de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedDTO" relationship="CREATE">
+      <point x="53.75" y="-14.0" />
+      <point x="2121.75" y="800.0" />
+      <point x="2330.6666666666665" y="800.0" />
+      <point x="-57.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2968.0" y="1920.0" />
+      <point x="2428.0" y="1920.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.origin.controller.OriginDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1820.0" />
+      <point x="2928.0" y="1820.0" />
+      <point x="2928.0" y="1720.0" />
+      <point x="2924.6666666666665" y="1720.0" />
+      <point x="-43.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService" target="de.traumastudios.ExoCompanionAPI.difficulty.repository.DifficultyEntity" relationship="CREATE">
+      <point x="-43.75" y="-14.0" />
+      <point x="3164.25" y="800.0" />
+      <point x="3168.0" y="800.0" />
+      <point x="3168.0" y="400.0" />
+      <point x="4013.333333333333" y="400.0" />
+      <point x="-54.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.service.CultureService" target="de.traumastudios.ExoCompanionAPI.culture.repository.CultureRepository" relationship="TO_ONE">
+      <point x="-40.25" y="-14.0" />
+      <point x="1447.75" y="800.0" />
+      <point x="1448.0" y="800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4408.0" y="2180.0" />
+      <point x="4408.0" y="1340.0" />
+      <point x="3622.3333333333335" y="1340.0" />
+      <point x="54.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.repository.BehaviorEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3568.0" y="1260.0" />
+      <point x="3888.0" y="1260.0" />
+      <point x="3888.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeController" target="de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService" relationship="TO_ONE">
+      <point x="-51.0" y="-14.0" />
+      <point x="877.0" y="1120.0" />
+      <point x="868.0" y="1120.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.service.CategoryService" target="de.traumastudios.ExoCompanionAPI.category.exception.CategoryNotFoundException" relationship="CREATE">
+      <point x="44.25" y="-14.0" />
+      <point x="2352.25" y="2740.0" />
+      <point x="4168.0" y="2740.0" />
+      <point x="4168.0" y="2680.0" />
+      <point x="4328.0" y="2680.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeController" target="de.traumastudios.ExoCompanionAPI.feedingtype.controller.FeedingTypeDTO" relationship="CREATE">
+      <point x="56.75" y="-14.0" />
+      <point x="1444.75" y="1940.0" />
+      <point x="1646.6666666666667" y="1940.0" />
+      <point x="-61.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService" target="de.traumastudios.ExoCompanionAPI.substrate.domain.Substrate" relationship="CREATE">
+      <point x="45.0" y="-14.0" />
+      <point x="3493.0" y="2280.0" />
+      <point x="3488.0" y="2280.0" />
+      <point x="3488.0" y="2100.0" />
+      <point x="489.3333333333335" y="2100.0" />
+      <point x="41.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.controller.LocationController" target="de.traumastudios.ExoCompanionAPI.location.controller.LocationDTO" relationship="CREATE">
+      <point x="-48.5" y="-14.0" />
+      <point x="4379.5" y="960.0" />
+      <point x="3038.3333333333335" y="960.0" />
+      <point x="50.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.controller.LocationController" target="de.traumastudios.ExoCompanionAPI.location.service.LocationService" relationship="TO_ONE">
+      <point x="48.5" y="-14.0" />
+      <point x="4476.5" y="1080.0" />
+      <point x="4468.0" y="1080.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" relationship="TO_MANY">
+      <point x="33.5" y="-14.0" />
+      <point x="4081.5" y="800.0" />
+      <point x="4088.0" y="800.0" />
+      <point x="4088.0" y="420.0" />
+      <point x="3958.0" y="420.0" />
+      <point x="50.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.repository.CultureEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3908.0" y="460.0" />
+      <point x="3968.0" y="460.0" />
+      <point x="3968.0" y="800.0" />
+      <point x="4014.5" y="800.0" />
+      <point x="-33.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4048.0" y="1100.0" />
+      <point x="4052.75" y="1100.0" />
+      <point x="-35.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="35.25" y="-14.0" />
+      <point x="4123.25" y="1120.0" />
+      <point x="4128.0" y="1120.0" />
+      <point x="4128.0" y="880.0" />
+      <point x="4092.666666666667" y="880.0" />
+      <point x="44.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="208.0" y="2140.0" />
+      <point x="208.0" y="1580.0" />
+      <point x="188.0" y="1580.0" />
+      <point x="188.0" y="1200.0" />
+      <point x="178.0" y="1200.0" />
+      <point x="-50.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.food.service.FoodService" target="de.traumastudios.ExoCompanionAPI.food.domain.Food" relationship="CREATE">
+      <point x="36.5" y="-14.0" />
+      <point x="1864.5" y="2280.0" />
+      <point x="1868.0" y="2280.0" />
+      <point x="1868.0" y="2140.0" />
+      <point x="928.0" y="2140.0" />
+      <point x="928.0" y="1600.0" />
+      <point x="-82.0" y="1600.0" />
+      <point x="30.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" relationship="TO_MANY">
+      <point x="-35.0" y="-14.0" />
+      <point x="-7.0" y="2280.0" />
+      <point x="-232.0" y="2280.0" />
+      <point x="-232.0" y="2140.0" />
+      <point x="-352.0" y="2140.0" />
+      <point x="-352.0" y="820.0" />
+      <point x="-212.0" y="820.0" />
+      <point x="-212.0" y="380.0" />
+      <point x="156.0" y="380.0" />
+      <point x="-32.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="228.0" y="1580.0" />
+      <point x="248.0" y="1580.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="188.0" y="540.0" />
+      <point x="508.0" y="540.0" />
+      <point x="508.0" y="620.0" />
+      <point x="488.0" y="620.0" />
+      <point x="488.0" y="1500.0" />
+      <point x="328.0" y="1500.0" />
+      <point x="328.0" y="2160.0" />
+      <point x="248.0" y="2160.0" />
+      <point x="248.0" y="2280.0" />
+      <point x="63.0" y="2280.0" />
+      <point x="35.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService" target="de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType" relationship="CREATE">
+      <point x="51.5" y="-14.0" />
+      <point x="1319.5" y="1640.0" />
+      <point x="1328.0" y="1640.0" />
+      <point x="1328.0" y="1360.0" />
+      <point x="278.0" y="1360.0" />
+      <point x="50.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.service.FeedingTypeService" target="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeRepository" relationship="TO_ONE">
+      <point x="-51.5" y="-14.0" />
+      <point x="1216.5" y="1580.0" />
+      <point x="1388.0" y="1580.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.controller.CategoryController" target="de.traumastudios.ExoCompanionAPI.category.controller.CategoryDTO" relationship="CREATE">
+      <point x="-49.5" y="-14.0" />
+      <point x="2158.5" y="2980.0" />
+      <point x="2168.0" y="2980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService" target="de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity" relationship="CREATE">
+      <point x="45.75" y="-14.0" />
+      <point x="913.75" y="800.0" />
+      <point x="908.0" y="800.0" />
+      <point x="908.0" y="500.0" />
+      <point x="3490.6666666666665" y="500.0" />
+      <point x="-57.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalController" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.service.AquaticAnimalService" relationship="TO_ONE">
+      <point x="-59.25" y="-14.0" />
+      <point x="1808.75" y="2800.0" />
+      <point x="1008.0" y="2800.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.service.RequirementService" target="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity" relationship="CREATE">
+      <point x="50.5" y="-14.0" />
+      <point x="2458.5" y="2280.0" />
+      <point x="2468.0" y="2280.0" />
+      <point x="2468.0" y="2120.0" />
+      <point x="3368.0" y="2120.0" />
+      <point x="3368.0" y="1380.0" />
+      <point x="4244.333333333333" y="1380.0" />
+      <point x="-63.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" relationship="TO_MANY">
+      <point x="-22.25" y="-14.0" />
+      <point x="405.75" y="800.0" />
+      <point x="408.0" y="800.0" />
+      <point x="408.0" y="600.0" />
+      <point x="-212.0" y="600.0" />
+      <point x="-212.0" y="380.0" />
+      <point x="156.0" y="380.0" />
+      <point x="-32.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="188.0" y="540.0" />
+      <point x="508.0" y="540.0" />
+      <point x="508.0" y="780.0" />
+      <point x="588.0" y="780.0" />
+      <point x="588.0" y="800.0" />
+      <point x="450.25" y="800.0" />
+      <point x="22.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4308.0" y="1260.0" />
+      <point x="4328.0" y="1260.0" />
+      <point x="4328.0" y="1420.0" />
+      <point x="4048.0" y="1420.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1540.0" />
+      <point x="4488.0" y="1540.0" />
+      <point x="4488.0" y="1380.0" />
+      <point x="4371.666666666667" y="1380.0" />
+      <point x="63.666666666666686" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4088.0" y="1260.0" />
+      <point x="4168.0" y="1260.0" />
+      <point x="4168.0" y="1400.0" />
+      <point x="4048.0" y="1400.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.origin.repository.OriginEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1480.0" />
+      <point x="4448.0" y="1480.0" />
+      <point x="4448.0" y="1360.0" />
+      <point x="4135.0" y="1360.0" />
+      <point x="47.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="4048.0" y="1100.0" />
+      <point x="3908.0" y="1100.0" />
+      <point x="3908.0" y="1580.0" />
+      <point x="4048.0" y="1580.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1520.0" />
+      <point x="4188.0" y="1520.0" />
+      <point x="4188.0" y="1120.0" />
+      <point x="4128.0" y="1120.0" />
+      <point x="4128.0" y="880.0" />
+      <point x="4092.666666666667" y="880.0" />
+      <point x="44.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.service.CultureService" target="de.traumastudios.ExoCompanionAPI.culture.domain.Culture" relationship="CREATE">
+      <point x="40.25" y="-14.0" />
+      <point x="1528.25" y="800.0" />
+      <point x="1528.0" y="800.0" />
+      <point x="1528.0" y="480.0" />
+      <point x="463.0" y="480.0" />
+      <point x="35.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3388.0" y="1280.0" />
+      <point x="3928.0" y="1280.0" />
+      <point x="3928.0" y="2160.0" />
+      <point x="4228.0" y="2160.0" />
+      <point x="4228.0" y="2280.0" />
+      <point x="4236.75" y="2280.0" />
+      <point x="-51.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity" target="de.traumastudios.ExoCompanionAPI.feedingtype.repository.FeedingTypeEntity" relationship="TO_MANY">
+      <point x="51.25" y="-14.0" />
+      <point x="4339.25" y="2280.0" />
+      <point x="4448.0" y="2280.0" />
+      <point x="4448.0" y="2180.0" />
+      <point x="4368.0" y="2180.0" />
+      <point x="4368.0" y="1320.0" />
+      <point x="3453.0" y="1320.0" />
+      <point x="65.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeController" target="de.traumastudios.ExoCompanionAPI.planttype.controller.PlantTypeDTO" relationship="CREATE">
+      <point x="51.0" y="-14.0" />
+      <point x="979.0" y="1020.0" />
+      <point x="2534.3333333333335" y="1020.0" />
+      <point x="-53.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateDTO" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="2608.0" y="1740.0" />
+      <point x="2428.0" y="1740.0" />
+      <point x="2428.0" y="1940.0" />
+      <point x="2211.5" y="1940.0" />
+      <point x="43.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" target="de.traumastudios.ExoCompanionAPI.substrate.controller.SubstrateDTO" relationship="TO_MANY">
+      <point x="-43.5" y="-14.0" />
+      <point x="2124.5" y="2000.0" />
+      <point x="2128.0" y="2000.0" />
+      <point x="2128.0" y="1720.0" />
+      <point x="2555.3333333333335" y="1720.0" />
+      <point x="-52.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.controller.PlantController" target="de.traumastudios.ExoCompanionAPI.plant.controller.PlantDTO" relationship="CREATE">
+      <point x="41.5" y="-14.0" />
+      <point x="2289.5" y="1600.0" />
+      <point x="2467.0" y="1600.0" />
+      <point x="-41.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="-41.5" y="-14.0" />
+      <point x="4126.5" y="2500.0" />
+      <point x="4128.0" y="2500.0" />
+      <point x="4128.0" y="2280.0" />
+      <point x="4048.0" y="2280.0" />
+      <point x="4048.0" y="2000.0" />
+      <point x="4088.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.category.repository.CategoryEntity" relationship="TO_MANY">
+      <point x="61.666666666666686" y="14.0" />
+      <point x="4149.666666666667" y="1720.0" />
+      <point x="4148.0" y="1720.0" />
+      <point x="4148.0" y="1980.0" />
+      <point x="4088.0" y="1980.0" />
+      <point x="4088.0" y="2260.0" />
+      <point x="4168.0" y="2260.0" />
+      <point x="4168.0" y="2420.0" />
+      <point x="4208.0" y="2420.0" />
+      <point x="4208.0" y="2500.0" />
+      <point x="4209.5" y="2500.0" />
+      <point x="41.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" relationship="TO_MANY">
+      <point x="-40.0" y="-14.0" />
+      <point x="8.0" y="1640.0" />
+      <point x="-152.0" y="1640.0" />
+      <point x="-152.0" y="1460.0" />
+      <point x="-212.0" y="1460.0" />
+      <point x="-212.0" y="380.0" />
+      <point x="156.0" y="380.0" />
+      <point x="-32.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.domain.Origin" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="188.0" y="540.0" />
+      <point x="508.0" y="540.0" />
+      <point x="508.0" y="620.0" />
+      <point x="-12.0" y="620.0" />
+      <point x="-12.0" y="1620.0" />
+      <point x="88.0" y="1620.0" />
+      <point x="40.0" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="CREATE">
+      <point x="-49.0" y="-14.0" />
+      <point x="3659.0" y="2560.0" />
+      <point x="3668.0" y="2560.0" />
+      <point x="3668.0" y="2420.0" />
+      <point x="74.66666666666652" y="2420.0" />
+      <point x="46.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.domain.Category" target="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" relationship="TO_MANY">
+      <point x="30.25" y="-14.0" />
+      <point x="-41.75" y="2560.0" />
+      <point x="-32.0" y="2560.0" />
+      <point x="-32.0" y="2440.0" />
+      <point x="408.0" y="2440.0" />
+      <point x="408.0" y="2180.0" />
+      <point x="568.0" y="2180.0" />
+      <point x="568.0" y="1120.0" />
+      <point x="88.0" y="1120.0" />
+      <point x="88.0" y="880.0" />
+      <point x="398.33333333333337" y="880.0" />
+      <point x="-29.666666666666664" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.domain.Plant" target="de.traumastudios.ExoCompanionAPI.category.domain.Category" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="428.0" y="1100.0" />
+      <point x="648.0" y="1100.0" />
+      <point x="648.0" y="2280.0" />
+      <point x="808.0" y="2280.0" />
+      <point x="808.0" y="2460.0" />
+      <point x="-112.0" y="2460.0" />
+      <point x="-112.0" y="2560.0" />
+      <point x="-102.25" y="2560.0" />
+      <point x="-30.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" target="de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity" relationship="TO_MANY">
+      <point x="33.5" y="-14.0" />
+      <point x="4081.5" y="800.0" />
+      <point x="4088.0" y="800.0" />
+      <point x="4088.0" y="420.0" />
+      <point x="3605.3333333333335" y="420.0" />
+      <point x="57.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.repository.PlantTypeEntity" target="de.traumastudios.ExoCompanionAPI.plant.repository.PlantEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3548.0" y="460.0" />
+      <point x="3968.0" y="460.0" />
+      <point x="3968.0" y="800.0" />
+      <point x="4014.5" y="800.0" />
+      <point x="-33.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.culture.controller.CultureController" target="de.traumastudios.ExoCompanionAPI.culture.controller.CultureDTO" relationship="CREATE">
+      <point x="45.5" y="-14.0" />
+      <point x="1953.5" y="1040.0" />
+      <point x="2381.6666666666665" y="1040.0" />
+      <point x="-46.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.service.OriginService" target="de.traumastudios.ExoCompanionAPI.origin.repository.OriginRepository" relationship="TO_ONE">
+      <point x="-38.0" y="-14.0" />
+      <point x="3230.0" y="1380.0" />
+      <point x="2748.0" y="1380.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.origin.controller.OriginController" target="de.traumastudios.ExoCompanionAPI.origin.service.OriginService" relationship="TO_ONE">
+      <point x="43.25" y="-14.0" />
+      <point x="3211.25" y="2000.0" />
+      <point x="3268.0" y="2000.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateEntity" target="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" relationship="TO_MANY">
+      <point x="0.0" y="14.0" />
+      <point x="3808.0" y="1580.0" />
+      <point x="4048.0" y="1580.0" />
+      <point x="4048.0" y="1640.0" />
+      <point x="4041.75" y="1640.0" />
+      <point x="-46.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity" target="de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateEntity" relationship="TO_MANY">
+      <point x="46.25" y="-14.0" />
+      <point x="4134.25" y="1640.0" />
+      <point x="4248.0" y="1640.0" />
+      <point x="4248.0" y="1520.0" />
+      <point x="3864.333333333333" y="1520.0" />
+      <point x="56.333333333333314" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.substrate.service.SubstrateService" target="de.traumastudios.ExoCompanionAPI.substrate.exception.SubstrateNotFoundException" relationship="CREATE">
+      <point x="45.0" y="-14.0" />
+      <point x="3493.0" y="2280.0" />
+      <point x="3488.0" y="2280.0" />
+      <point x="3488.0" y="2100.0" />
+      <point x="3648.0" y="2100.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" target="de.traumastudios.ExoCompanionAPI.category.domain.Category" relationship="TO_MANY">
+      <point x="-46.66666666666667" y="14.0" />
+      <point x="-18.666666666666686" y="2460.0" />
+      <point x="-112.0" y="2460.0" />
+      <point x="-112.0" y="2560.0" />
+      <point x="-102.25" y="2560.0" />
+      <point x="-30.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.domain.Category" target="de.traumastudios.ExoCompanionAPI.landanimal.domain.LandAnimal" relationship="TO_MANY">
+      <point x="30.25" y="-14.0" />
+      <point x="-41.75" y="2560.0" />
+      <point x="-32.0" y="2560.0" />
+      <point x="-32.0" y="2440.0" />
+      <point x="28.0" y="2440.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorController" target="de.traumastudios.ExoCompanionAPI.behavior.controller.BehaviorDTO" relationship="CREATE">
+      <point x="48.75" y="-14.0" />
+      <point x="1936.75" y="2000.0" />
+      <point x="1937.3333333333335" y="2000.0" />
+      <point x="-50.66666666666667" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.service.CategoryService" target="de.traumastudios.ExoCompanionAPI.category.repository.CategoryRepository" relationship="TO_ONE">
+      <point x="-44.25" y="-14.0" />
+      <point x="2263.75" y="2700.0" />
+      <point x="1848.0" y="2700.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService" target="de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedRepository" relationship="TO_ONE">
+      <point x="48.5" y="-14.0" />
+      <point x="1816.5" y="240.0" />
+      <point x="1808.0" y="240.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.plant.service.PlantService" target="de.traumastudios.ExoCompanionAPI.plant.exception.PlantNotFoundException" relationship="CREATE">
+      <point x="36.25" y="-14.0" />
+      <point x="2284.25" y="1180.0" />
+      <point x="2268.0" y="1180.0" />
+      <point x="2268.0" y="940.0" />
+      <point x="1868.0" y="940.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.location.service.LocationService" target="de.traumastudios.ExoCompanionAPI.location.exception.LocationNotFoundException" relationship="CREATE">
+      <point x="-43.25" y="-14.0" />
+      <point x="4424.75" y="800.0" />
+      <point x="4348.0" y="800.0" />
+      <point x="4348.0" y="540.0" />
+      <point x="4388.0" y="540.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalController" target="de.traumastudios.ExoCompanionAPI.landanimal.controller.LandAnimalDTO" relationship="CREATE">
+      <point x="-54.25" y="-14.0" />
+      <point x="3593.75" y="2720.0" />
+      <point x="3228.0" y="2720.0" />
+      <point x="3228.0" y="2500.0" />
+      <point x="2248.0" y="2500.0" />
+      <point x="2248.0" y="2300.0" />
+      <point x="2226.0" y="2300.0" />
+      <point x="58.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" relationship="TO_MANY">
+      <point x="42.66666666666667" y="14.0" />
+      <point x="2330.6666666666665" y="880.0" />
+      <point x="2628.0" y="880.0" />
+      <point x="2628.0" y="1400.0" />
+      <point x="3168.0" y="1400.0" />
+      <point x="3168.0" y="1920.0" />
+      <point x="3328.0" y="1920.0" />
+      <point x="3328.0" y="2380.0" />
+      <point x="2048.0" y="2380.0" />
+      <point x="2048.0" y="2560.0" />
+      <point x="2076.5" y="2560.0" />
+      <point x="48.5" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" target="de.traumastudios.ExoCompanionAPI.category.domain.Category" relationship="TO_MANY">
+      <point x="-53.33333333333333" y="14.0" />
+      <point x="-5.333333333333314" y="1720.0" />
+      <point x="-12.0" y="1720.0" />
+      <point x="-12.0" y="2000.0" />
+      <point x="-112.0" y="2000.0" />
+      <point x="-112.0" y="2560.0" />
+      <point x="-102.25" y="2560.0" />
+      <point x="-30.25" y="-14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.aquaticanimal.controller.AquaticAnimalDTO" target="de.traumastudios.ExoCompanionAPI.rarity.controller.RarityDTO" relationship="TO_MANY">
+      <point x="-48.5" y="-14.0" />
+      <point x="1979.5" y="2560.0" />
+      <point x="1988.0" y="2560.0" />
+      <point x="1988.0" y="2360.0" />
+      <point x="3048.0" y="2360.0" />
+      <point x="3048.0" y="2000.0" />
+      <point x="3088.0" y="2000.0" />
+      <point x="3088.0" y="1600.0" />
+      <point x="2588.0" y="1600.0" />
+      <point x="2588.0" y="1160.0" />
+      <point x="2388.0" y="1160.0" />
+      <point x="2388.0" y="900.0" />
+      <point x="2288.0" y="900.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.category.domain.Category" target="de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal" relationship="TO_MANY">
+      <point x="30.25" y="-14.0" />
+      <point x="-41.75" y="2560.0" />
+      <point x="-32.0" y="2560.0" />
+      <point x="-32.0" y="2440.0" />
+      <point x="-72.0" y="2440.0" />
+      <point x="-72.0" y="1980.0" />
+      <point x="48.0" y="1980.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.planttype.service.PlantTypeService" target="de.traumastudios.ExoCompanionAPI.planttype.domain.PlantType" relationship="CREATE">
+      <point x="45.75" y="-14.0" />
+      <point x="913.75" y="800.0" />
+      <point x="908.0" y="800.0" />
+      <point x="908.0" y="500.0" />
+      <point x="350.33333333333337" y="500.0" />
+      <point x="42.33333333333333" y="14.0" />
+    </edge>
+    <edge source="de.traumastudios.ExoCompanionAPI.rarity.service.RarityService" target="de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity" relationship="CREATE">
+      <point x="37.5" y="-14.0" />
+      <point x="1065.5" y="1640.0" />
+      <point x="1068.0" y="1640.0" />
+      <point x="1068.0" y="1380.0" />
+      <point x="1208.0" y="1380.0" />
+      <point x="1208.0" y="640.0" />
+      <point x="3661.6666666666665" y="640.0" />
+      <point x="-46.33333333333333" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.16395045632333768" showDependencies="true" x="2207.9999999999995" y="1520.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
