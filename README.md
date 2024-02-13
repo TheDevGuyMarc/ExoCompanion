@@ -497,26 +497,37 @@ If you need any technical or functional support don't hesitate to write us an em
 			- description: ``String``
 - Technical Appliance DB
 	- Data:
-		- Lights
-			- T5
-			- T8
-			- HQI
-			- HCI
-			- LED
-		- Pumps
-		- Filters
-		- O²
 		- CO²
-		- Dosing
+  		- Drop Checker
+  		- Pressure Requlator
+  		- Solenoid Valve
+  		- Bubble Counter
+  		- Counter Fluid
+  		- Controller
+  		- Pressure Resistance Tube
+  		- Cylinder
+  		- Diffusor
+  		- Backflow Preventer
+  		- Washer
+  		- Reactor
+  		- Fitting
+		- Filters
+    - Lights
+    	- T5
+    	- T8
+    	- LED
+    	- LED-Background
+    	- Accessoires
 		- Heating
+		- Reverse Osmosis
 		- Cooling
-		- Skimmers
-		- Oxidators
-		- UV-Clearers
-		- Osmosis
-		- Security
+		- Aeration
+		- UV-Filters
 		- Controllers
-		- Feeding Maschines
+		- Pumps
+		- Dosing Pumps
+		- Skimmers
+		- Smart Plugs
 	- Requirements:
 		- Create (Admin)
 		- Read
@@ -524,6 +535,103 @@ If you need any technical or functional support don't hesitate to write us an em
 		- Delete (Admin)
 		- List
 		- Filter
+  - Model:
+    - [ ] Article:
+      - id: Long
+      - name: String
+      - description: String
+      - image: byte[]
+      - manual: byte[]
+      - price: double
+      - smart: boolean
+      - app_download_ios: String
+      - app_download_android: String
+      - width: double
+      - height: double
+      - depth: double
+      - weight: double
+      - ean: Long
+      - manufacturer: Manufacturer
+      - guarante: int
+      - freshwater: boolean
+      - seawater: boolean
+      - cable_length: double
+      - cable_type: String
+      - power_supply_included: boolean
+      - power_consumption: double
+      - recommended_tank_size: double
+      - voltage: double
+      - input_power: double
+      - battery: **BatteryType**[ENUM]
+      - batteries_included: boolean
+      - accessoires: List<Accessoire>
+      - protection_class: **ProtectionClass**[ENUM]
+      - material: **Material**[ENUM]
+    - [ ] CO²:
+      - all data available for now !
+    - [ ] Filters:
+      - delivery_head_approx: double
+      - heater: boolean
+      - volume: double
+      - prefilter_volume: double
+      - container_volume: double
+      - filter_type: **Type**[ENUM]
+    - [ ] Lighting:
+      - glass_thickness: double
+      - led_quantity: int
+      - luminous_flux: double
+      - color_temp: double
+      - led_colors: String
+      - waterproof_level: String
+      - color: String
+      - energy_efficiency: String
+      - min_energy_efficiency_class: String
+      - max_energy_efficiency_class: String
+      - light_type: String
+      - wifi: String
+    - [ ] Heating:
+      - min_temp: double
+      - max_temp: double
+      - submersible: boolean
+    - [ ] Reverse Osmosis:
+      - gpd_output: double
+      - retention_rate: double
+      - pressure: double
+      - connection: String
+    - [ ] Cooling:
+      - motor_revolution: double
+      - op_temp: double
+    - [ ] Aeration:
+      - power: double
+      - pump_head_approx: double
+      - hose_size: **HoseSize**[ENUM]
+      - max_flow_rate: double
+    - [ ] UV-Filters:
+      - hose_size: **HoseSize**[ENUM]
+      - lamp_wattage: double
+      - protection_class: String
+      - max_op_pressure: double
+      - water_temp_max: double
+    - [ ] Pumps:
+      - max_flowrate: double
+      - max_headheight: double
+      - hose_connection: String
+      - installation: String
+    - [ ] Dosing Pump:
+      - dosing_heads: int
+      - hose_connection: String
+      - dose_flow: double
+      - bpt: double
+      - operating_temps: double
+      - rel_humidity: double
+    - [ ] Skimmers:
+      - hose-pressure: double
+      - hose_size: String
+    - [ ] Smart Plugs:
+      - installation: String
+      - rating: String
+      - setting time: double
+      - operating temperatures: double
 - Food & Supplements DB
 	- Data:
 		- Aquarium Food
@@ -537,6 +645,37 @@ If you need any technical or functional support don't hesitate to write us an em
 		- Delete (Admin)
 		- List
 		- Filter
+- Model:
+  - [ ] Food:
+      - id: Long
+      - name: String
+      - description: String
+      - image: byte[]
+      - price: double
+      - fish_size: double
+      - ingredients: List<Ingredient>
+      - analytical_ingredients: List<AnalyticalIngredient>
+      - supplements: List<AnalyticalIngredient>
+      - packaging: String
+      - size: double
+      - ean: String
+      - weight: double
+      - manufacturer: String
+      - sinking: boolean
+      - type: **FoodType**[ENUM]
+  - [ ] Supplement:
+      - id: Long
+      - name: String
+      - description: String
+      - image: byte[]
+      - price: double
+      - ingredients: List<Ingredient>
+      - analytical_ingredients: List<AnalyticalIngredient>
+      - supplements: List<AnalyticalIngredient>
+      - packaging: String
+      - ean: String
+      - weight: double
+      - manufacturer: String
 - Water Chemistry DB
 	- Data:
 		- Water Supplements
