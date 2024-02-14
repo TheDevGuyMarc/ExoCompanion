@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.growspeed;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class GrowspeedServiceTest {
+public class GrowspeedServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllGrowspeeds() {
         // given

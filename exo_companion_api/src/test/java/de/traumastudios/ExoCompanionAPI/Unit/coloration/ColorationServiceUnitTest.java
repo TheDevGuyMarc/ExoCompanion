@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.coloration;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ColorationServiceTest {
+public class ColorationServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllColorations() {
         // given

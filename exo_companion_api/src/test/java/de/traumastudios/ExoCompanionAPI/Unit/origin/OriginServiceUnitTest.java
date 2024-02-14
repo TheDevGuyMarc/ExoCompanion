@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.origin;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class OriginServiceTest {
+public class OriginServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllOrigins() {
         // given

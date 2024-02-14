@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.culture;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CultureServiceTest {
+public class CultureServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllCultures() {
         // given

@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.plant;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PlantServiceTest {
+public class PlantServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllPlants() {
         // given

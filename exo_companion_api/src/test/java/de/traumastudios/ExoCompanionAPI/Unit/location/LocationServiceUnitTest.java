@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.location;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class LocationServiceTest {
+public class LocationServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllLocations() {
         // given

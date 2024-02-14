@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.category;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class CategoryServiceTest {
+public class CategoryServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllCategories() {
         // given

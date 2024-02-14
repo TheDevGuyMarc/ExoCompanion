@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.rarity;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class RarityServiceTest {
+public class RarityServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllRarities() {
         // given

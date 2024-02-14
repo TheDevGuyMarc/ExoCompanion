@@ -1,8 +1,14 @@
 package de.traumastudios.ExoCompanionAPI.Unit.difficulty;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class DifficultyServiceTest {
+public class DifficultyServiceUnitTest {
+    @BeforeEach
+    public void setUp() {
+
+    }
+
     @Test
     public void itShouldListAllDifficulties() {
         // given
