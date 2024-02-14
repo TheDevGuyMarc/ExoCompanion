@@ -1,23 +1,20 @@
-
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
 
 # ExoCompanion
 
-ExoCompanion is a tool to aid aquaristics and terraristics fans to be even better with their hobbies. It provides large databases regarding animals, plants and much more, as well as tools to calculate and check various metrics.
-
+ExoCompanion is a tool to aid aquaristics and terraristics fans to be even better with their hobbies. It provides large
+databases regarding animals, plants and much more, as well as tools to calculate and check various metrics.
 
 ## Tech Stack
 
 - Java 21
 - Springboot
 - Spring Security
-- PostgreSQL
+- PostgresSQL
 - Redis
 - GSON
 - Lombok
 - Tinylog
-
 
 ## Features
 
@@ -45,7 +42,7 @@ ExoCompanion is a tool to aid aquaristics and terraristics fans to be even bette
 
 ### ExoCompanion Scraper
 
-- Webscraping
+- Web-scraping
   - Wikipedia
   - ReptileDB
   - Reef
@@ -55,7 +52,7 @@ ExoCompanion is a tool to aid aquaristics and terraristics fans to be even bette
 
 ## Roadmap
 
-Keep in mind that this is the overall Roadmap, for the specific Roadmap look in the Roadmap.md file in each sub project.
+Keep in mind that this is the overall Roadmap, for the specific Roadmap look in the Roadmap.md file in each subproject.
 
 - [ ] Implement Plant DB
 - [ ] Testing
@@ -136,7 +133,6 @@ Keep in mind that this is the overall Roadmap, for the specific Roadmap look in 
   - [ ] Unit Tests
   - [ ] Integration Tests
 
-
 ## Installation
 
 If you want to install ExoCompanion Locally you need some prerequisites to make this work.
@@ -151,65 +147,74 @@ If you want to install ExoCompanion Locally you need some prerequisites to make 
 - Install Java 21.x.x
 - Install Maven latest
 - Install Docker & Docker Compose
+
 ## Development
 
 ### Run Local DEV Environment
+
 ```shell
   docker-compose -f docker-compose.dev.yml up
 ```
 
 ### Run Local UAT Environment
+
 ```shell
   docker-compose -f docker-compose.test.yml up
 ```
+
 ## Tests
 
-With ExoCompanion we test each module before release, that means we do unit and integration tests (automated) before new features reach the customer. What do we test how ?
+With ExoCompanion we test each module before release, that means we do unit and integration tests (automated) before new
+features reach the customer. What do we test how ?
 
 **Unit Tests**:
+
 - Repository
 - Service
 
 **Integration Tests**:
+
 - Controller
 
 ### Run Tests
 
 **Maven Profiles:**
+
 ```xml
+
 <profiles>
-   <profile>
-      <id>unit-test</id>
-      <build>
-         <plugins>
-            <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <configuration>
-                  <includes>
-                     <include>**/Test*.java</include>
-                  </includes>
-               </configuration>
-            </plugin>
-         </plugins>
-      </build>
-   </profile>
-   <profile>
-      <id>integration-test</id>
-      <build>
-         <plugins>
-            <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <configuration>
-                  <includes>
-                     <include>**/IntegrationTest*.java</include>
-                  </includes>
-               </configuration>
-            </plugin>
-         </plugins>
-      </build>
-   </profile>
+  <profile>
+    <id>unit-test</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+            <includes>
+              <include>**/Test*.java</include>
+            </includes>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+  <profile>
+    <id>integration-test</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+            <includes>
+              <include>**/IntegrationTest*.java</include>
+            </includes>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
 
 </profiles>
 ```
@@ -219,41 +224,40 @@ With ExoCompanion we test each module before release, that means we do unit and 
   mvn test -Pintegration-test //// profile name is integration-test for integration tests
 ```
 
-
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-
 ## Usage/Examples
-
-
 
 ## Documentation
 
 You can find the [official documentation](#) on our website for usage examples and tutorials.
 
-
 ## FAQ
 
 #### Is ExoCompanion Free ?
 
-Yes for now ExoCompanion is totally free, that might change at a later point though but don't worry if you made a free account you will be free forever.
+Yes for now ExoCompanion is totally free, that might change at a later point though but don't worry if you made a free
+account you will be free forever.
 
 #### Is ExoCompanion for Aquariums and Terrariums ?
 
 Yes it is and also for Paludariums and Vivariums if you want, we do all animals in tanks.
 
-#### What do i do if my animal/plant/tech is not in the DB ?
+#### What do I do if my animal/plant/tech is not in the DB ?
 
-No worries you can simply contact us and we will try to add the data as fast as we can.
+No worries you can simply contact us, and we will try to add the data as fast as we can.
 
-#### What do i do if i see errors in the data ?
+#### What do I do if I see errors in the data ?
 
-You can write an email to us with a correction proposal, we will cross check this then and if this is really an error we will change the dataset.
+You can write an email to us with a correction proposal, we will cross-check this then and if this is really an error we
+will change the dataset.
+
 ## Support
 
-If you need any technical or functional support don't hesitate to write us an email we will reach back to you as fast as we can.
+If you need any technical or functional support don't hesitate to write us an email we will reach back to you as fast as
+we can.
 
 ## License
 
