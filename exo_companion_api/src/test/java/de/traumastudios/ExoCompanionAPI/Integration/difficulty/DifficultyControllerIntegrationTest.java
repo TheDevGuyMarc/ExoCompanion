@@ -1,8 +1,20 @@
 package de.traumastudios.ExoCompanionAPI.Integration.difficulty;
 
+import de.traumastudios.ExoCompanionAPI.difficulty.controller.DifficultyController;
+import de.traumastudios.ExoCompanionAPI.difficulty.service.DifficultyService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-public class DifficultyIntegrationTest {
+@WebMvcTest(DifficultyController.class)
+public class DifficultyControllerIntegrationTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private DifficultyService difficultyService;
+
     @Test
     public void itShouldListAllDifficulties() {
         // given

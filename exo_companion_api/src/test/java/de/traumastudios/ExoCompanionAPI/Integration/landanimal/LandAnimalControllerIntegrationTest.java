@@ -1,8 +1,20 @@
-package de.traumastudios.ExoCompanionAPI.Integration.category;
+package de.traumastudios.ExoCompanionAPI.Integration.landanimal;
 
+import de.traumastudios.ExoCompanionAPI.category.controller.CategoryController;
+import de.traumastudios.ExoCompanionAPI.landanimal.service.LandAnimalService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-public class CategoryIntegrationTest {
+@WebMvcTest(CategoryController.class)
+public class LandAnimalControllerIntegrationTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private LandAnimalService landAnimalService;
+
     @Test
     public void itShouldListAllCategories() {
         // given

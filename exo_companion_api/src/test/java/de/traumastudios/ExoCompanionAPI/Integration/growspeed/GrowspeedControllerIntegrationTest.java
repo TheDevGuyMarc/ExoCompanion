@@ -1,8 +1,20 @@
 package de.traumastudios.ExoCompanionAPI.Integration.growspeed;
 
+import de.traumastudios.ExoCompanionAPI.growspeed.controller.GrowspeedController;
+import de.traumastudios.ExoCompanionAPI.growspeed.service.GrowspeedService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-public class GrowspeedIntegrationTest {
+@WebMvcTest(GrowspeedController.class)
+public class GrowspeedControllerIntegrationTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private GrowspeedService growspeedService;
+
     @Test
     public void itShouldListAllGrowspeeds() {
         // given

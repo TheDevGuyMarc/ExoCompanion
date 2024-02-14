@@ -1,8 +1,20 @@
 package de.traumastudios.ExoCompanionAPI.Integration.rarity;
 
+import de.traumastudios.ExoCompanionAPI.rarity.controller.RarityController;
+import de.traumastudios.ExoCompanionAPI.rarity.service.RarityService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-public class RarityIntegrationTest {
+@WebMvcTest(RarityController.class)
+public class RarityControllerIntegrationTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private RarityService rarityService;
+
     @Test
     public void itShouldListAllRarities() {
         // given

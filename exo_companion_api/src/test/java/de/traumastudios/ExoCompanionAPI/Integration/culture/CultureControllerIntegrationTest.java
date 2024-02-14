@@ -1,8 +1,20 @@
 package de.traumastudios.ExoCompanionAPI.Integration.culture;
 
+import de.traumastudios.ExoCompanionAPI.culture.controller.CultureController;
+import de.traumastudios.ExoCompanionAPI.culture.service.CultureService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-public class CultureIntegrationTest {
+@WebMvcTest(CultureController.class)
+public class CultureControllerIntegrationTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private CultureService cultureService;
+
     @Test
     public void itShouldListAllCultures() {
         // given
