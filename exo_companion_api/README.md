@@ -54,17 +54,17 @@ databases regarding animals, plants and much more, as well as tools to calculate
 
 Keep in mind that this is the overall Roadmap, for the specific Roadmap look in the Roadmap.md file in each subproject.
 
-- [ ] Implement Plant DB
+- [X] Implement Plant DB
 - [ ] Testing
-  - [ ] Unit Tests
+  - [X] Unit Tests
   - [ ] Integration Tests
-- [ ] Implement Land Animal DB
+- [X] Implement Land Animal DB
 - [ ] Testing
-  - [ ] Unit Tests
+  - [X] Unit Tests
   - [ ] Integration Tests
-- [ ] Implement Aquatic Animal DB
+- [X] Implement Aquatic Animal DB
 - [ ] Testing
-  - [ ] Unit Tests
+  - [X] Unit Tests
   - [ ] Integration Tests
 - [ ] Implement Technical Appliance DB
 - [ ] Testing

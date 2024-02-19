@@ -5,6 +5,7 @@ import de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEn
 import de.traumastudios.ExoCompanionAPI.feedingtype.domain.FeedingType;
 import de.traumastudios.ExoCompanionAPI.landanimal.repository.LandAnimalEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class FeedingTypeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

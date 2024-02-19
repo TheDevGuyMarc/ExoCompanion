@@ -12,6 +12,7 @@ import de.traumastudios.ExoCompanionAPI.rarity.repository.RarityEntity;
 import de.traumastudios.ExoCompanionAPI.requirement.repository.RequirementEntity;
 import de.traumastudios.ExoCompanionAPI.substrate.repository.SubstrateEntity;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,6 +24,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class LandAnimalEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

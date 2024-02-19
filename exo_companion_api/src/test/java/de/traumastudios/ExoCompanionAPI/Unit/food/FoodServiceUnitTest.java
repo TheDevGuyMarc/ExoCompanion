@@ -1,9 +1,32 @@
 package de.traumastudios.ExoCompanionAPI.Unit.food;
 
+import de.traumastudios.ExoCompanionAPI.food.domain.Food;
+import de.traumastudios.ExoCompanionAPI.food.repository.FoodEntity;
+import de.traumastudios.ExoCompanionAPI.food.repository.FoodRepository;
+import de.traumastudios.ExoCompanionAPI.food.service.FoodService;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.List;
+import java.util.Optional;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
 public class FoodServiceUnitTest {
+    @Mock
+    private FoodRepository foodRepository;
+
+    @InjectMocks
+    private FoodService foodService;
+
     @BeforeEach
     public void setUp() {
 
@@ -12,58 +35,101 @@ public class FoodServiceUnitTest {
     @Test
     public void itShouldListAllFoods() {
         // given
+        FoodEntity entity1 = mock(FoodEntity.class);
+        FoodEntity entity2 = mock(FoodEntity.class);
+
+        List<FoodEntity> mockFood = List.of(
+            entity1,
+            entity2
+        );
 
         // when
+        doReturn(mockFood).when(foodRepository).findAll();
+        List<Food> foods = this.foodService.findAllFoods();
 
         // then
+        Assertions.assertThat(foods)
+            .allMatch(food -> food instanceof Food)
+            .withFailMessage("Element in the list is not of type Food");
     }
 
     @Test
     public void itShouldFindAFoodById() {
         // given
+        FoodEntity entity = mock(FoodEntity.class);
+        Optional<FoodEntity> testObject = Optional.of(entity);
+        Long productID = 1L;
 
         // when
+        doReturn(testObject).when(foodRepository).findById(productID);
+        Optional<Food> food = this.foodService.findFoodById(productID);
 
         // then
+        Assertions.assertThat(food).isPresent();
+        Assertions.assertThat(food).isNotNull();
     }
 
     @Test
     public void itShouldThrowAnExceptionIfAFoodCouldNotBeFoundById() {
-        // given
+        // Given
+        Long nonExistentId = 2L;
+        doReturn(Optional.empty()).when(foodRepository).findById(nonExistentId);
 
-        // when
+        // When
+        Optional<Food> food = this.foodService.findFoodById(nonExistentId);
 
-        // then
+        // Then
+        Assertions.assertThat(food).isEmpty();
     }
 
     @Test
     public void itShouldFindAFoodByName() {
         // given
+        FoodEntity entity = mock(FoodEntity.class);
+        Optional<FoodEntity> testObject = Optional.of(entity);
+        String name = "fish";
 
         // when
+        doReturn(testObject).when(foodRepository).findByName(name);
+        Optional<Food> food = this.foodService.findFoodByName(name);
 
         // then
+        Assertions.assertThat(food).isPresent();
+        Assertions.assertThat(food.get()).isInstanceOf(Food.class);
     }
 
     @Test
     public void itShouldThrowAnExceptionIfAFoodCouldNotBeFoundByName() {
-        // given
+        // Given
+        String nonExistentName = "nonexistentfish";
+        doReturn(Optional.empty()).when(foodRepository).findByName(nonExistentName);
 
-        // when
+        // When
+        Optional<Food> food = this.foodService.findFoodByName(nonExistentName);
 
-        // then
+        // Then
+        Assertions.assertThat(food).isEmpty();
     }
 
     @Test
     public void itShouldCreateANewFood() {
-        // given
+        // Given
+        FoodEntity savedEntity = mock(FoodEntity.class); // Mocked entity saved in the repository
+        Food food = mock(Food.class); // Food object passed to the service
 
-        // when
+        // Mock the behavior of the repository's saveAndFlush method to return the saved entity
+        doReturn(savedEntity).when(foodRepository).saveAndFlush(any(FoodEntity.class));
 
-        // then
+        // When
+        Food createdFood = this.foodService.createFood(food);
+
+        // Then
+        Assertions.assertThat(createdFood).isNotNull(); // Assert that the returned food is not null
+        verify(foodRepository).saveAndFlush(any(FoodEntity.class)); // Verify that saveAndFlush was called
     }
 
     @Test
+    @Disabled
     public void itShouldUpdateAnExistingFood() {
         // given
 
@@ -75,9 +141,13 @@ public class FoodServiceUnitTest {
     @Test
     public void itShouldDeleteAnExistingFoodById() {
         // given
+        Long id = 1L;
 
         // when
+        doNothing().when(foodRepository).deleteById(id);
+        this.foodService.deleteFood(id);
 
         // then
+        Assertions.assertThatCode(() -> this.foodService.deleteFood(id)).doesNotThrowAnyException();
     }
 }
