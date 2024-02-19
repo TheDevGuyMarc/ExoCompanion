@@ -102,7 +102,7 @@ public class LocationServiceUnitTest {
     @Test
     public void itShouldThrowAnExceptionIfALocationCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentLocation";
         doReturn(Optional.empty()).when(repository).findByName(nonExistentName);
 
         // When
@@ -115,8 +115,8 @@ public class LocationServiceUnitTest {
     @Test
     public void itShouldCreateANewLocation() {
         // Given
-        LocationEntity savedEntity = mock(LocationEntity.class); // Mocked entity saved in the repository
-        Location location = mock(Location.class); // Animal object passed to the service
+        LocationEntity savedEntity = mock(LocationEntity.class);
+        Location location = mock(Location.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(repository).saveAndFlush(any(LocationEntity.class));
@@ -125,8 +125,8 @@ public class LocationServiceUnitTest {
         Location createdLocation = this.locationService.createLocation(location);
 
         // Then
-        Assertions.assertThat(createdLocation).isNotNull(); // Assert that the returned animal is not null
-        verify(repository).saveAndFlush(any(LocationEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdLocation).isNotNull();
+        verify(repository).saveAndFlush(any(LocationEntity.class));
     }
 
     @Test

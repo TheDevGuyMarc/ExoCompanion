@@ -114,8 +114,8 @@ public class DifficultyServiceUnitTest {
     @Test
     public void itShouldCreateANewDifficulty() {
         // Given
-        DifficultyEntity savedEntity = mock(DifficultyEntity.class); // Mocked entity saved in the repository
-        Difficulty difficulty = mock(Difficulty.class); // Difficulty object passed to the service
+        DifficultyEntity savedEntity = mock(DifficultyEntity.class);
+        Difficulty difficulty = mock(Difficulty.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(difficultyRepository).saveAndFlush(any(DifficultyEntity.class));
@@ -124,8 +124,8 @@ public class DifficultyServiceUnitTest {
         Difficulty createdDifficulty = this.difficultyService.createDifficulty(difficulty);
 
         // Then
-        Assertions.assertThat(createdDifficulty).isNotNull(); // Assert that the returned difficulty is not null
-        verify(difficultyRepository).saveAndFlush(any(DifficultyEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdDifficulty).isNotNull();
+        verify(difficultyRepository).saveAndFlush(any(DifficultyEntity.class));
     }
 
     @Test

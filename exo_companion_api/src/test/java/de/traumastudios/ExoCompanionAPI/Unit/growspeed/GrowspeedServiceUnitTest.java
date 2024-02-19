@@ -1,7 +1,5 @@
 package de.traumastudios.ExoCompanionAPI.Unit.growspeed;
 
-import de.traumastudios.ExoCompanionAPI.aquaticanimal.domain.AquaticAnimal;
-import de.traumastudios.ExoCompanionAPI.aquaticanimal.repository.AquaticAnimalEntity;
 import de.traumastudios.ExoCompanionAPI.growspeed.domain.Growspeed;
 import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedEntity;
 import de.traumastudios.ExoCompanionAPI.growspeed.repository.GrowspeedRepository;
@@ -104,7 +102,7 @@ public class GrowspeedServiceUnitTest {
     @Test
     public void itShouldThrowAnExceptionIfAGrowspeedCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentGrowspeed";
         doReturn(Optional.empty()).when(growspeedRepository).findByName(nonExistentName);
 
         // When
@@ -117,8 +115,8 @@ public class GrowspeedServiceUnitTest {
     @Test
     public void itShouldCreateANewGrowspeed() {
         // Given
-        GrowspeedEntity savedEntity = mock(GrowspeedEntity.class); // Mocked entity saved in the repository
-        Growspeed growspeed = mock(Growspeed.class); // Animal object passed to the service
+        GrowspeedEntity savedEntity = mock(GrowspeedEntity.class);
+        Growspeed growspeed = mock(Growspeed.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(growspeedRepository).saveAndFlush(any(GrowspeedEntity.class));
@@ -127,8 +125,8 @@ public class GrowspeedServiceUnitTest {
         Growspeed createdAnimal = this.growspeedService.createGrowspeed(growspeed);
 
         // Then
-        Assertions.assertThat(createdAnimal).isNotNull(); // Assert that the returned animal is not null
-        verify(growspeedRepository).saveAndFlush(any(GrowspeedEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdAnimal).isNotNull();
+        verify(growspeedRepository).saveAndFlush(any(GrowspeedEntity.class));
     }
 
     @Test

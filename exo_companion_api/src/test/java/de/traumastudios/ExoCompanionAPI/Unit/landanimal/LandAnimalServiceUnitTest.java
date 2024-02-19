@@ -102,7 +102,7 @@ public class LandAnimalServiceUnitTest {
     @Test
     public void itShouldThrowAnExceptionIfALandAnimalCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentLandAnimal";
         doReturn(Optional.empty()).when(landAnimalRepository).findByName(nonExistentName);
 
         // When
@@ -115,8 +115,8 @@ public class LandAnimalServiceUnitTest {
     @Test
     public void itShouldCreateANewLandAnimal() {
         // Given
-        LandAnimalEntity savedEntity = mock(LandAnimalEntity.class); // Mocked entity saved in the repository
-        LandAnimal animal = mock(LandAnimal.class); // Animal object passed to the service
+        LandAnimalEntity savedEntity = mock(LandAnimalEntity.class);
+        LandAnimal animal = mock(LandAnimal.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(landAnimalRepository).saveAndFlush(any(LandAnimalEntity.class));
@@ -125,8 +125,8 @@ public class LandAnimalServiceUnitTest {
         LandAnimal createdAnimal = this.landAnimalService.createLandAnimal(animal);
 
         // Then
-        Assertions.assertThat(createdAnimal).isNotNull(); // Assert that the returned animal is not null
-        verify(landAnimalRepository).saveAndFlush(any(LandAnimalEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdAnimal).isNotNull();
+        verify(landAnimalRepository).saveAndFlush(any(LandAnimalEntity.class));
     }
 
     @Test

@@ -113,8 +113,8 @@ public class CategoryServiceUnitTest {
     @Test
     public void itShouldCreateANewCategory() {
         // Given
-        CategoryEntity savedEntity = mock(CategoryEntity.class); // Mocked entity saved in the repository
-        Category category = mock(Category.class); // Category object passed to the service
+        CategoryEntity savedEntity = mock(CategoryEntity.class);
+        Category category = mock(Category.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(categoryRepository).saveAndFlush(any(CategoryEntity.class));
@@ -123,8 +123,8 @@ public class CategoryServiceUnitTest {
         Category createdCategory = this.categoryService.createCategory(category);
 
         // Then
-        Assertions.assertThat(createdCategory).isNotNull(); // Assert that the returned category is not null
-        verify(categoryRepository).saveAndFlush(any(CategoryEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdCategory).isNotNull();
+        verify(categoryRepository).saveAndFlush(any(CategoryEntity.class));
     }
 
     @Test

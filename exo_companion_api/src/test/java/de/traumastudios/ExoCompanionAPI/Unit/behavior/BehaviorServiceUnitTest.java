@@ -101,7 +101,7 @@ public class BehaviorServiceUnitTest {
     @Test
     public void itShouldThrowAnExceptionIfABehaviorCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentBehavior";
         doReturn(Optional.empty()).when(behaviorRepository).findByName(nonExistentName);
 
         // When
@@ -114,7 +114,7 @@ public class BehaviorServiceUnitTest {
     @Test
     public void itShouldCreateANewBehavior() {
         // Given
-        BehaviorEntity savedEntity = mock(BehaviorEntity.class); // Mocked entity saved in the repository
+        BehaviorEntity savedEntity = mock(BehaviorEntity.class);
         Behavior behavior = mock(Behavior.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
@@ -124,8 +124,8 @@ public class BehaviorServiceUnitTest {
         Behavior createdBehavior = this.behaviorService.createBehavior(behavior);
 
         // Then
-        Assertions.assertThat(createdBehavior).isNotNull(); // Assert that the returned animal is not null
-        verify(behaviorRepository).saveAndFlush(any(BehaviorEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdBehavior).isNotNull();
+        verify(behaviorRepository).saveAndFlush(any(BehaviorEntity.class));
     }
 
     @Test

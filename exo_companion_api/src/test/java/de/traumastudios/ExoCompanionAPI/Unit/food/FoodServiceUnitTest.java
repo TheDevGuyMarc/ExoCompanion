@@ -101,7 +101,7 @@ public class FoodServiceUnitTest {
     @Test
     public void itShouldThrowAnExceptionIfAFoodCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentFood";
         doReturn(Optional.empty()).when(foodRepository).findByName(nonExistentName);
 
         // When
@@ -114,8 +114,8 @@ public class FoodServiceUnitTest {
     @Test
     public void itShouldCreateANewFood() {
         // Given
-        FoodEntity savedEntity = mock(FoodEntity.class); // Mocked entity saved in the repository
-        Food food = mock(Food.class); // Food object passed to the service
+        FoodEntity savedEntity = mock(FoodEntity.class);
+        Food food = mock(Food.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(foodRepository).saveAndFlush(any(FoodEntity.class));
@@ -124,8 +124,8 @@ public class FoodServiceUnitTest {
         Food createdFood = this.foodService.createFood(food);
 
         // Then
-        Assertions.assertThat(createdFood).isNotNull(); // Assert that the returned food is not null
-        verify(foodRepository).saveAndFlush(any(FoodEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdFood).isNotNull();
+        verify(foodRepository).saveAndFlush(any(FoodEntity.class));
     }
 
     @Test

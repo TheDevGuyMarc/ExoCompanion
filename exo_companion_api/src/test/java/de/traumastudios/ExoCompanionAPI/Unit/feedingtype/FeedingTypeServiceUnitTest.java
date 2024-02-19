@@ -114,8 +114,8 @@ public class FeedingTypeServiceUnitTest {
     @Test
     public void itShouldCreateANewFeedingType() {
         // Given
-        FeedingTypeEntity savedEntity = mock(FeedingTypeEntity.class); // Mocked entity saved in the repository
-        FeedingType animal = mock(FeedingType.class); // FeedingType object passed to the service
+        FeedingTypeEntity savedEntity = mock(FeedingTypeEntity.class);
+        FeedingType animal = mock(FeedingType.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(feedingTypeRepository).saveAndFlush(any(FeedingTypeEntity.class));
@@ -124,8 +124,8 @@ public class FeedingTypeServiceUnitTest {
         FeedingType createdFeedingType = this.feedingTypeService.createFeedingType(animal);
 
         // Then
-        Assertions.assertThat(createdFeedingType).isNotNull(); // Assert that the returned feeding type is not null
-        verify(feedingTypeRepository).saveAndFlush(any(FeedingTypeEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdFeedingType).isNotNull();
+        verify(feedingTypeRepository).saveAndFlush(any(FeedingTypeEntity.class));
     }
 
     @Test

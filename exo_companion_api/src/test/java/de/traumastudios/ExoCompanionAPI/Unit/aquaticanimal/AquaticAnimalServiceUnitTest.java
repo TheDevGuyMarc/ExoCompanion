@@ -99,7 +99,7 @@ public class AquaticAnimalServiceUnitTest {
     @Test
     public void itShouldReturnEmptyOptionalIfAquaticAnimalCouldNotBeFoundByName() {
         // Given
-        String nonExistentName = "nonexistentfish";
+        String nonExistentName = "nonExistentFish";
         doReturn(Optional.empty()).when(aquaticAnimalRepository).findByName(nonExistentName);
 
         // When
@@ -112,8 +112,8 @@ public class AquaticAnimalServiceUnitTest {
     @Test
     public void itShouldCreateANewAquaticAnimal() {
         // Given
-        AquaticAnimalEntity savedEntity = mock(AquaticAnimalEntity.class); // Mocked entity saved in the repository
-        AquaticAnimal animal = mock(AquaticAnimal.class); // Animal object passed to the service
+        AquaticAnimalEntity savedEntity = mock(AquaticAnimalEntity.class);
+        AquaticAnimal animal = mock(AquaticAnimal.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(aquaticAnimalRepository).saveAndFlush(any(AquaticAnimalEntity.class));
@@ -122,8 +122,8 @@ public class AquaticAnimalServiceUnitTest {
         AquaticAnimal createdAnimal = this.aquaticAnimalService.createAquaticAnimal(animal);
 
         // Then
-        Assertions.assertThat(createdAnimal).isNotNull(); // Assert that the returned animal is not null
-        verify(aquaticAnimalRepository).saveAndFlush(any(AquaticAnimalEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdAnimal).isNotNull();
+        verify(aquaticAnimalRepository).saveAndFlush(any(AquaticAnimalEntity.class));
     }
 
     @Test

@@ -114,8 +114,8 @@ public class ColorationServiceUnitTest {
     @Test
     public void itShouldCreateANewColoration() {
         // Given
-        ColorationEntity savedEntity = mock(ColorationEntity.class); // Mocked entity saved in the repository
-        Coloration coloration = mock(Coloration.class); // Coloration object passed to the service
+        ColorationEntity savedEntity = mock(ColorationEntity.class);
+        Coloration coloration = mock(Coloration.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(colorationRepository).saveAndFlush(any(ColorationEntity.class));
@@ -124,8 +124,8 @@ public class ColorationServiceUnitTest {
         Coloration createdColoration = this.colorationService.createColoration(coloration);
 
         // Then
-        Assertions.assertThat(createdColoration).isNotNull(); // Assert that the returned coloration is not null
-        verify(colorationRepository).saveAndFlush(any(ColorationEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdColoration).isNotNull();
+        verify(colorationRepository).saveAndFlush(any(ColorationEntity.class));
     }
 
     @Test

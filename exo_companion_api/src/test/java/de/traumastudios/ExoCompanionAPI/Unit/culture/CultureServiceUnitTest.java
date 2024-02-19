@@ -85,8 +85,8 @@ public class CultureServiceUnitTest {
     @Test
     public void itShouldCreateANewCulture() {
         // Given
-        CultureEntity savedEntity = mock(CultureEntity.class); // Mocked entity saved in the repository
-        Culture culture = mock(Culture.class); // Culture object passed to the service
+        CultureEntity savedEntity = mock(CultureEntity.class);
+        Culture culture = mock(Culture.class);
 
         // Mock the behavior of the repository's saveAndFlush method to return the saved entity
         doReturn(savedEntity).when(cultureRepository).saveAndFlush(any(CultureEntity.class));
@@ -95,8 +95,8 @@ public class CultureServiceUnitTest {
         Culture createdCulture = this.cultureService.createCulture(culture);
 
         // Then
-        Assertions.assertThat(createdCulture).isNotNull(); // Assert that the returned culture is not null
-        verify(cultureRepository).saveAndFlush(any(CultureEntity.class)); // Verify that saveAndFlush was called
+        Assertions.assertThat(createdCulture).isNotNull();
+        verify(cultureRepository).saveAndFlush(any(CultureEntity.class));
     }
 
     @Test
