@@ -2,38 +2,31 @@ package de.traumastudios.ExoCompanionAPI.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.oauth2.jwt.JwtDecoder;
-import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
-/*@EnableWebSecurity
 @Configuration
-@EnableMethodSecurity(prePostEnabled = true)
+@EnableWebSecurity
 public class WebSecurityConfig {
+    private static final String[] SWAGGER_WHITELIST = {
+        "/swagger-ui/**",
+        "/v3/api-docs/**",
+        "/swagger-resources/**",
+        "/swagger-resources"
+    };
+
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         http
-            .authorizeHttpRequests(
-                authorizeRequests -> authorizeRequests.anyRequest().authenticated()
-            )
-            .oauth2ResourceServer(
-                oauth2 -> oauth2.jwt(
-                    jwt -> jwt.decoder(jwtDecoder())
-                )
-            )
-            .csrf(csrf -> csrf.csrfTokenRepository(
-                CookieCsrfTokenRepository.withHttpOnlyFalse()
-            ));
+            .csrf().disable()
+            .authorizeHttpRequests((requests) -> requests
+                .requestMatchers(SWAGGER_WHITELIST).permitAll()
+                .anyRequest().authenticated())
+            .httpBasic();
 
         return http.build();
     }
 
-    @Bean
-    public JwtDecoder jwtDecoder() {
-        return NimbusJwtDecoder.withJwkSetUri("").build(); // TODO: Set JWK with Keycloak
-    }
-}*/
+}

@@ -234,6 +234,11 @@ features reach the customer. What do we test how ?
 
 You can find the [official documentation](#) on our website for usage examples and tutorials.
 
+### API Documentation
+
+You can find the [API Documentation](http://localhost:8080/swagger-ui/index.html) if you start the application 
+and visit the documentation page.
+
 ## FAQ
 
 #### Is ExoCompanion Free ?
