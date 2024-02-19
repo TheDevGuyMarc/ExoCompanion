@@ -32,3 +32,10 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:28080/auth/realms/exocompanion
+
+# ===============================
+# = SpringDocs
+# ===============================
+
+springdoc:
+  show-actuator: true
